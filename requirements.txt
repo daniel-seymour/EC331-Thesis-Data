@@ -14,3 +14,5 @@ nemosis==3.7.0
 awswrangler
 boto3
 dask
+!pip install --upgrade pandas>=2.0.0
+!pip install "dask[complete]" s3fs
