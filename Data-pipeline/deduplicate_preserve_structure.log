@@ -1,0 +1,23 @@
+2025-03-20 08:28:15,699 - INFO - Starting deduplication process on a single file
+2025-03-20 08:28:15,700 - INFO - Source file: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-20 08:28:15,701 - INFO - Target file: s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/deduped.parquet
+2025-03-20 08:28:15,701 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-20 08:28:15,702 - INFO - Offer date column: OFFERDATETIME
+2025-03-20 08:28:15,703 - INFO - Dry run: False
+2025-03-20 08:28:15,704 - INFO - Memory usage start: 18.0% (Used: 10.62 GB)
+2025-03-20 08:28:15,725 - INFO - Found credentials from IAM Role: thesis
+2025-03-20 08:28:16,035 - INFO - Processing: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/deduped.parquet
+2025-03-20 08:28:16,036 - INFO - Memory usage before processing: 18.0% (Used: 10.63 GB)
+2025-03-20 08:28:16,273 - INFO - Reading parquet file from S3
+2025-03-20 08:28:41,690 - INFO - Read 16,966,080 rows from s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-20 08:28:44,662 - INFO - Converted TRADINGDATE to datetime
+2025-03-20 08:28:44,664 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-20 08:28:46,897 - INFO - Using offer date column: OFFERDATETIME
+2025-03-20 08:28:53,514 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest
+2025-03-20 08:29:12,196 - INFO - Removed 16,924,320 duplicates (99.75%)
+2025-03-20 08:29:12,197 - INFO - Final dataset has 41,760 rows
+2025-03-20 08:29:12,198 - INFO - Writing 41,760 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/deduped.parquet
+2025-03-20 08:29:12,465 - INFO - Successfully wrote deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/deduped.parquet
+2025-03-20 08:29:15,459 - INFO - Deduplication result: {'success': True, 'original_rows': 16966080, 'deduplicated_rows': 41760, 'duplicates_removed': 16924320, 'duplicates_percent': 99.75386182312002, 'offer_date_used': 'OFFERDATETIME', 'execution_time': 56.43164849281311}
+2025-03-20 08:29:15,460 - INFO - Total execution time: 59.76 seconds
+2025-03-20 08:29:15,461 - INFO - Memory usage end: 19.4% (Used: 11.48 GB)
