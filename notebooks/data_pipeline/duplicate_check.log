@@ -1,0 +1,1225 @@
+2025-04-03 10:31:20,092 - INFO - Starting duplicate analysis
+2025-04-03 10:31:20,093 - INFO - File: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-03 10:31:20,094 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:31:20,095 - INFO - Analyzing file: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-03 10:31:20,097 - INFO - Memory usage before processing: 6.1% (Used: 3.21 GB)
+2025-04-03 10:31:20,116 - INFO - Found credentials from IAM Role: thesis
+2025-04-03 10:31:20,443 - INFO - Found credentials from IAM Role: thesis
+2025-04-03 10:31:45,969 - INFO - Read 16,966,080 rows from s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-03 10:31:45,970 - INFO - Columns in the dataset: ['I', 'BIDS', 'BIDOFFERPERIOD', '1', 'DUID', 'BIDTYPE', 'TRADINGDATE', 'OFFERDATETIME', 'PERIODID', 'MAXAVAIL', 'FIXEDLOAD', 'RAMPUPRATE', 'RAMPDOWNRATE', 'ENABLEMENTMIN', 'ENABLEMENTMAX', 'LOWBREAKPOINT', 'HIGHBREAKPOINT', 'BANDAVAIL1', 'BANDAVAIL2', 'BANDAVAIL3', 'BANDAVAIL4', 'BANDAVAIL5', 'BANDAVAIL6', 'BANDAVAIL7', 'BANDAVAIL8', 'BANDAVAIL9', 'BANDAVAIL10', 'PASAAVAILABILITY']
+2025-04-03 10:31:49,079 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:31:49,079 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:31:51,330 - INFO - Sample data (first 5 rows):
+2025-04-03 10:31:51,344 - INFO -    I  BIDS  BIDOFFERPERIOD    1      DUID    BIDTYPE TRADINGDATE        OFFERDATETIME  PERIODID  MAXAVAIL  FIXEDLOAD  RAMPUPRATE  RAMPDOWNRATE  ENABLEMENTMIN  ENABLEMENTMAX  LOWBREAKPOINT  HIGHBREAKPOINT  BANDAVAIL1  BANDAVAIL2  BANDAVAIL3  BANDAVAIL4  BANDAVAIL5  BANDAVAIL6  BANDAVAIL7  BANDAVAIL8  BANDAVAIL9  BANDAVAIL10  PASAAVAILABILITY
+0  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+1  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       2.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+2  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       3.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+3  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       4.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+4  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       5.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+2025-04-03 10:31:54,818 - INFO - Found 16,966,080 duplicate rows (100.00%)
+2025-04-03 10:32:04,603 - INFO - Found offer date column: OFFERDATETIME
+2025-04-03 10:32:07,533 - INFO - Sample of duplicate data:
+2025-04-03 10:32:18,619 - INFO - Duplicate group with key: 2023-10-08 00:00:00 | ASNENC1 | 1.0
+2025-04-03 10:32:18,620 - INFO - Group has 2 duplicates
+2025-04-03 10:32:18,632 - INFO -           I  BIDS  BIDOFFERPERIOD    1     DUID    BIDTYPE TRADINGDATE       OFFERDATETIME  PERIODID  MAXAVAIL  FIXEDLOAD  RAMPUPRATE  RAMPDOWNRATE  ENABLEMENTMIN  ENABLEMENTMAX  LOWBREAKPOINT  HIGHBREAKPOINT  BANDAVAIL1  BANDAVAIL2  BANDAVAIL3  BANDAVAIL4  BANDAVAIL5  BANDAVAIL6  BANDAVAIL7  BANDAVAIL8  BANDAVAIL9  BANDAVAIL10  PASAAVAILABILITY
+6597217   D  BIDS  BIDOFFERPERIOD  1.0  ASNENC1  RAISE1SEC  2023-10-08 2023-10-05 15:35:07       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         70.0               NaN
+15080257  D  BIDS  BIDOFFERPERIOD  1.0  ASNENC1  RAISE1SEC  2023-10-08 2023-10-05 15:35:07       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         70.0               NaN
+2025-04-03 10:32:19,295 - INFO - Analysis completed in 59.20 seconds
+2025-04-03 10:32:19,356 - INFO - Memory usage after processing: 27.2% (Used: 16.32 GB)
+2025-04-03 10:32:21,844 - INFO - 
+================================================================================
+2025-04-03 10:32:21,845 - INFO - DUPLICATE ANALYSIS SUMMARY
+2025-04-03 10:32:21,847 - INFO - ================================================================================
+2025-04-03 10:32:21,847 - INFO - File: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-03 10:32:21,848 - INFO - Total rows: 16,966,080
+2025-04-03 10:32:21,848 - INFO - Duplicate rows: 16,966,080
+2025-04-03 10:32:21,849 - INFO - Duplicate percentage: 100.00%
+2025-04-03 10:32:21,850 - INFO - Keys used: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:32:21,850 - INFO - Execution time: 59.20 seconds
+2025-04-03 10:32:21,851 - INFO - ================================================================================
+2025-04-03 10:32:21,852 - INFO - Total execution time: 61.76 seconds
+2025-04-03 10:42:01,954 - INFO - 🚀 Starting batch deduplication process
+2025-04-03 10:42:01,955 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-03 10:42:01,956 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-03 10:42:01,975 - INFO - Found credentials from IAM Role: thesis
+2025-04-03 10:42:08,020 - INFO - Found credentials from IAM Role: thesis
+2025-04-03 10:42:08,302 - INFO - 🧾 Raw folders found: 16
+2025-04-03 10:42:08,303 - INFO - ✅ Already deduped folders: 1
+2025-04-03 10:42:08,304 - INFO - ⚙️ Folders to be deduplicated: 15
+2025-04-03 10:42:08,326 - INFO - Found credentials from IAM Role: thesis
+2025-04-03 10:42:08,414 - INFO - 📂 Processing folder: PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 10:42:08,415 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:42:08,415 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:08,656 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet
+2025-04-03 10:42:08,784 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:08,785 - ERROR - ❌ Failed PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — File does not exist
+2025-04-03 10:42:08,785 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-03 10:42:08,786 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 10:42:08,787 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,000 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/combined.parquet
+2025-04-03 10:42:09,074 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,075 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet — File does not exist
+2025-04-03 10:42:09,076 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-03 10:42:09,077 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 10:42:09,077 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,290 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/combined.parquet
+2025-04-03 10:42:09,365 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,365 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet — File does not exist
+2025-04-03 10:42:09,366 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 10:42:09,367 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:42:09,368 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,594 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet
+2025-04-03 10:42:09,668 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,668 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — File does not exist
+2025-04-03 10:42:09,669 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-03 10:42:09,670 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 10:42:09,671 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,890 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/combined.parquet
+2025-04-03 10:42:09,964 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:09,965 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet — File does not exist
+2025-04-03 10:42:09,965 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-03 10:42:09,966 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 10:42:09,968 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,181 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/combined.parquet
+2025-04-03 10:42:10,256 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,257 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet — File does not exist
+2025-04-03 10:42:10,258 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-03 10:42:10,259 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 10:42:10,260 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,487 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/combined.parquet
+2025-04-03 10:42:10,561 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,561 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet — File does not exist
+2025-04-03 10:42:10,562 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-03 10:42:10,563 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 10:42:10,564 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,782 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/combined.parquet
+2025-04-03 10:42:10,856 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:10,857 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet — File does not exist
+2025-04-03 10:42:10,858 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-03 10:42:10,858 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 10:42:10,859 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,075 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/combined.parquet
+2025-04-03 10:42:11,149 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,150 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet — File does not exist
+2025-04-03 10:42:11,151 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-03 10:42:11,151 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 10:42:11,153 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,350 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/combined.parquet
+2025-04-03 10:42:11,425 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,426 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet — File does not exist
+2025-04-03 10:42:11,426 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-03 10:42:11,427 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 10:42:11,428 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,671 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/combined.parquet
+2025-04-03 10:42:11,746 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,746 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet — File does not exist
+2025-04-03 10:42:11,747 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-03 10:42:11,748 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 10:42:11,748 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:11,964 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/combined.parquet
+2025-04-03 10:42:12,041 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,042 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet — File does not exist
+2025-04-03 10:42:12,043 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-03 10:42:12,043 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 10:42:12,044 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,256 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/combined.parquet
+2025-04-03 10:42:12,331 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,331 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet — File does not exist
+2025-04-03 10:42:12,332 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-03 10:42:12,333 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 10:42:12,334 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,554 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/combined.parquet
+2025-04-03 10:42:12,628 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,629 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet — File does not exist
+2025-04-03 10:42:12,630 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-03 10:42:12,631 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-03 10:42:12,632 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,851 - WARNING - File does not exist: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/combined.parquet
+2025-04-03 10:42:12,925 - INFO - Memory usage after processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:42:12,926 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet — File does not exist
+2025-04-03 10:42:12,927 - INFO - 🏁 Finished batch deduplication in 10.97 seconds
+2025-04-03 10:47:37,158 - INFO - 🚀 Starting batch deduplication process
+2025-04-03 10:47:37,159 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-03 10:47:37,159 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-03 10:47:43,920 - INFO - 🧾 Raw folders found: 16
+2025-04-03 10:47:43,921 - INFO - ✅ Already deduped folders: 1
+2025-04-03 10:47:43,922 - INFO - ⚙️ Folders to be deduplicated: 15
+2025-04-03 10:47:43,930 - INFO - 📂 Processing folder: PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 10:47:43,930 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:47:43,931 - INFO - Memory usage before processing: 6.2% (Used: 3.28 GB)
+2025-04-03 10:48:13,789 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-04-03 10:48:17,653 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:48:17,654 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:48:20,396 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:48:28,470 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:48:51,804 - INFO - Removed 20,936,736 duplicates (99.60%)
+2025-04-03 10:48:51,806 - INFO - Final dataset has 84,384 rows
+2025-04-03 10:48:51,806 - INFO - DRY RUN: Would write 84,384 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:48:52,984 - INFO - Memory usage after processing: 22.7% (Used: 13.55 GB)
+2025-04-03 10:48:55,420 - INFO - ✅ Completed PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — Removed 20936736 duplicates
+2025-04-03 10:48:55,421 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-03 10:48:55,421 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 10:48:55,423 - INFO - Memory usage before processing: 7.5% (Used: 4.06 GB)
+2025-04-03 10:48:56,920 - INFO - Read 465,947 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/
+2025-04-03 10:48:56,922 - INFO - Available duplicate keys: ['DUID', 'PERIODID']
+2025-04-03 10:48:56,982 - INFO - Using fallback offer date column: LASTCHANGED
+2025-04-03 10:48:57,320 - INFO - Found duplicates, sorting by LASTCHANGED to keep latest record
+2025-04-03 10:48:57,321 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/: Length of ascending (4) != length of by (3)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 182, in deduplicate_file
+    df_sorted = df.sort_values(by=[*available_keys, offer_date_col],
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pandas/core/frame.py", line 7167, in sort_values
+    raise ValueError(
+ValueError: Length of ascending (4) != length of by (3)
+2025-04-03 10:48:57,510 - INFO - Memory usage after processing: 7.5% (Used: 4.12 GB)
+2025-04-03 10:48:57,511 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet — Length of ascending (4) != length of by (3)
+2025-04-03 10:48:57,512 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-03 10:48:57,513 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 10:48:57,515 - INFO - Memory usage before processing: 7.5% (Used: 4.12 GB)
+2025-04-03 10:48:58,974 - INFO - Read 454,014 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/
+2025-04-03 10:48:58,976 - INFO - Available duplicate keys: ['DUID', 'PERIODID']
+2025-04-03 10:48:59,035 - INFO - Using fallback offer date column: LASTCHANGED
+2025-04-03 10:48:59,340 - INFO - Found duplicates, sorting by LASTCHANGED to keep latest record
+2025-04-03 10:48:59,341 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/: Length of ascending (4) != length of by (3)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 182, in deduplicate_file
+    df_sorted = df.sort_values(by=[*available_keys, offer_date_col],
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pandas/core/frame.py", line 7167, in sort_values
+    raise ValueError(
+ValueError: Length of ascending (4) != length of by (3)
+2025-04-03 10:48:59,518 - INFO - Memory usage after processing: 7.9% (Used: 4.41 GB)
+2025-04-03 10:48:59,519 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet — Length of ascending (4) != length of by (3)
+2025-04-03 10:48:59,519 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 10:48:59,520 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:48:59,521 - INFO - Memory usage before processing: 7.9% (Used: 4.41 GB)
+2025-04-03 10:49:29,498 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-04-03 10:49:33,362 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:49:33,363 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:49:36,115 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:49:44,125 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:50:07,358 - INFO - Removed 20,936,736 duplicates (99.60%)
+2025-04-03 10:50:07,359 - INFO - Final dataset has 84,384 rows
+2025-04-03 10:50:07,359 - INFO - DRY RUN: Would write 84,384 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 10:50:08,537 - INFO - Memory usage after processing: 22.1% (Used: 13.14 GB)
+2025-04-03 10:50:10,974 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — Removed 20936736 duplicates
+2025-04-03 10:50:10,975 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-03 10:50:10,976 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 10:50:10,978 - INFO - Memory usage before processing: 7.2% (Used: 3.87 GB)
+2025-04-03 10:50:42,824 - INFO - Read 22,514,688 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/
+2025-04-03 10:50:46,986 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:50:46,988 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:50:49,932 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:50:58,495 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:51:23,733 - INFO - Removed 22,415,328 duplicates (99.56%)
+2025-04-03 10:51:23,734 - INFO - Final dataset has 99,360 rows
+2025-04-03 10:51:23,735 - INFO - DRY RUN: Would write 99,360 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 10:51:24,994 - INFO - Memory usage after processing: 24.2% (Used: 14.44 GB)
+2025-04-03 10:51:27,618 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet — Removed 22415328 duplicates
+2025-04-03 10:51:27,619 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-03 10:51:27,619 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 10:51:27,621 - INFO - Memory usage before processing: 8.3% (Used: 4.55 GB)
+2025-04-03 10:52:00,779 - INFO - Read 22,709,088 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/
+2025-04-03 10:52:04,785 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:52:04,786 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:52:07,836 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:52:16,577 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:52:42,072 - INFO - Removed 22,601,088 duplicates (99.52%)
+2025-04-03 10:52:42,073 - INFO - Final dataset has 108,000 rows
+2025-04-03 10:52:42,074 - INFO - DRY RUN: Would write 108,000 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 10:52:43,355 - INFO - Memory usage after processing: 24.8% (Used: 14.82 GB)
+2025-04-03 10:52:46,144 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet — Removed 22601088 duplicates
+2025-04-03 10:52:46,145 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-03 10:52:46,145 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 10:52:46,147 - INFO - Memory usage before processing: 8.6% (Used: 4.78 GB)
+2025-04-03 10:53:23,199 - INFO - Read 23,415,552 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/
+2025-04-03 10:53:27,519 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:53:27,519 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:53:30,587 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:53:39,459 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:54:05,088 - INFO - Removed 23,303,520 duplicates (99.52%)
+2025-04-03 10:54:05,089 - INFO - Final dataset has 112,032 rows
+2025-04-03 10:54:05,089 - INFO - DRY RUN: Would write 112,032 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 10:54:06,563 - INFO - Memory usage after processing: 26.4% (Used: 15.81 GB)
+2025-04-03 10:54:10,155 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet — Removed 23303520 duplicates
+2025-04-03 10:54:10,156 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-03 10:54:10,157 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 10:54:10,158 - INFO - Memory usage before processing: 7.7% (Used: 4.17 GB)
+2025-04-03 10:55:07,483 - INFO - Read 40,057,344 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/
+2025-04-03 10:55:15,480 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:55:15,481 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:55:20,630 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:55:35,839 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:56:24,798 - INFO - Removed 39,900,096 duplicates (99.61%)
+2025-04-03 10:56:24,799 - INFO - Final dataset has 157,248 rows
+2025-04-03 10:56:24,800 - INFO - DRY RUN: Would write 157,248 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 10:56:27,298 - INFO - Memory usage after processing: 40.8% (Used: 24.79 GB)
+2025-04-03 10:56:32,954 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet — Removed 39900096 duplicates
+2025-04-03 10:56:32,956 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-03 10:56:32,956 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 10:56:32,957 - INFO - Memory usage before processing: 8.1% (Used: 4.44 GB)
+2025-04-03 10:56:34,055 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:56:34,165 - INFO - Memory usage after processing: 8.1% (Used: 4.41 GB)
+2025-04-03 10:56:34,168 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:56:34,169 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-03 10:56:34,181 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 10:56:34,187 - INFO - Memory usage before processing: 8.1% (Used: 4.41 GB)
+2025-04-03 10:57:04,352 - INFO - Read 21,227,616 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/
+2025-04-03 10:57:08,245 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:57:08,246 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:57:11,036 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:57:19,039 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:57:42,333 - INFO - Removed 21,144,096 duplicates (99.61%)
+2025-04-03 10:57:42,333 - INFO - Final dataset has 83,520 rows
+2025-04-03 10:57:42,334 - INFO - DRY RUN: Would write 83,520 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 10:57:43,537 - INFO - Memory usage after processing: 23.0% (Used: 13.72 GB)
+2025-04-03 10:57:45,957 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet — Removed 21144096 duplicates
+2025-04-03 10:57:45,958 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-03 10:57:45,959 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 10:57:45,960 - INFO - Memory usage before processing: 8.0% (Used: 4.37 GB)
+2025-04-03 10:57:46,819 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:57:46,918 - INFO - Memory usage after processing: 7.9% (Used: 4.34 GB)
+2025-04-03 10:57:46,920 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:57:46,921 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-03 10:57:46,922 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 10:57:46,927 - INFO - Memory usage before processing: 7.9% (Used: 4.34 GB)
+2025-04-03 10:57:47,952 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:57:48,054 - INFO - Memory usage after processing: 7.9% (Used: 4.32 GB)
+2025-04-03 10:57:48,059 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 10:57:48,060 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-03 10:57:48,062 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 10:57:48,066 - INFO - Memory usage before processing: 7.9% (Used: 4.32 GB)
+2025-04-03 10:58:23,632 - INFO - Read 24,655,968 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/
+2025-04-03 10:58:28,191 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:58:28,192 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:58:31,433 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 10:58:40,780 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 10:59:08,943 - INFO - Removed 24,540,768 duplicates (99.53%)
+2025-04-03 10:59:08,944 - INFO - Final dataset has 115,200 rows
+2025-04-03 10:59:08,945 - INFO - DRY RUN: Would write 115,200 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 10:59:10,319 - INFO - Memory usage after processing: 25.1% (Used: 15.02 GB)
+2025-04-03 10:59:13,335 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet — Removed 24540768 duplicates
+2025-04-03 10:59:13,336 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-03 10:59:13,336 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 10:59:13,338 - INFO - Memory usage before processing: 7.5% (Used: 4.08 GB)
+2025-04-03 10:59:48,637 - INFO - Read 22,521,024 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/
+2025-04-03 10:59:52,637 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 10:59:52,638 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 10:59:55,592 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:00:04,066 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:00:28,579 - INFO - Removed 22,411,296 duplicates (99.51%)
+2025-04-03 11:00:28,580 - INFO - Final dataset has 109,728 rows
+2025-04-03 11:00:28,580 - INFO - DRY RUN: Would write 109,728 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:00:30,000 - INFO - Memory usage after processing: 26.6% (Used: 15.98 GB)
+2025-04-03 11:00:33,563 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet — Removed 22411296 duplicates
+2025-04-03 11:00:33,564 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-03 11:00:33,565 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-03 11:00:33,566 - INFO - Memory usage before processing: 8.8% (Used: 4.87 GB)
+2025-04-03 11:00:34,593 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/1507255328.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:00:34,690 - INFO - Memory usage after processing: 8.8% (Used: 4.86 GB)
+2025-04-03 11:00:34,694 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:00:34,699 - INFO - 🏁 Finished batch deduplication in 777.54 seconds
+2025-04-03 11:01:05,579 - INFO - 🚀 Starting batch deduplication process
+2025-04-03 11:01:05,580 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-03 11:01:05,580 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-03 11:01:11,942 - INFO - 🧾 Raw folders found: 15
+2025-04-03 11:01:11,943 - INFO - ✅ Already deduped folders: 1
+2025-04-03 11:01:11,944 - INFO - ⚙️ Folders to be deduplicated: 14
+2025-04-03 11:01:11,951 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-03 11:01:11,952 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 11:01:11,953 - INFO - Memory usage before processing: 7.9% (Used: 4.29 GB)
+2025-04-03 11:01:13,478 - INFO - Read 465,947 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/
+2025-04-03 11:01:13,566 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:01:13,567 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:01:13,630 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:01:13,986 - INFO - No duplicates found in the folder
+2025-04-03 11:01:13,987 - INFO - DRY RUN: Would write 465,947 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 11:01:14,166 - INFO - Memory usage after processing: 7.9% (Used: 4.39 GB)
+2025-04-03 11:01:14,167 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet — Removed 0 duplicates
+2025-04-03 11:01:14,168 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-03 11:01:14,169 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 11:01:14,170 - INFO - Memory usage before processing: 7.9% (Used: 4.39 GB)
+2025-04-03 11:01:15,625 - INFO - Read 454,014 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/
+2025-04-03 11:01:15,706 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:01:15,707 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:01:15,766 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:01:16,062 - INFO - No duplicates found in the folder
+2025-04-03 11:01:16,063 - INFO - DRY RUN: Would write 454,014 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 11:01:16,240 - INFO - Memory usage after processing: 7.5% (Used: 4.18 GB)
+2025-04-03 11:01:16,241 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet — Removed 0 duplicates
+2025-04-03 11:01:16,241 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 11:01:16,243 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:01:16,244 - INFO - Memory usage before processing: 7.5% (Used: 4.18 GB)
+2025-04-03 11:01:46,076 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-04-03 11:01:49,910 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:01:49,911 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:01:52,653 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:02:00,568 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:02:23,987 - INFO - Removed 20,936,736 duplicates (99.60%)
+2025-04-03 11:02:23,987 - INFO - Final dataset has 84,384 rows
+2025-04-03 11:02:23,988 - INFO - DRY RUN: Would write 84,384 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:02:25,171 - INFO - Memory usage after processing: 22.6% (Used: 13.44 GB)
+2025-04-03 11:02:27,592 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — Removed 20936736 duplicates
+2025-04-03 11:02:27,593 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-03 11:02:27,594 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:02:27,596 - INFO - Memory usage before processing: 7.4% (Used: 4.03 GB)
+2025-04-03 11:02:59,368 - INFO - Read 22,514,688 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/
+2025-04-03 11:03:03,484 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:03:03,485 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:03:06,426 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:03:14,898 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:03:40,242 - INFO - Removed 22,415,328 duplicates (99.56%)
+2025-04-03 11:03:40,242 - INFO - Final dataset has 99,360 rows
+2025-04-03 11:03:40,243 - INFO - DRY RUN: Would write 99,360 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:03:41,501 - INFO - Memory usage after processing: 23.5% (Used: 14.06 GB)
+2025-04-03 11:03:44,106 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet — Removed 22415328 duplicates
+2025-04-03 11:03:44,107 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-03 11:03:44,108 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:03:44,109 - INFO - Memory usage before processing: 7.6% (Used: 4.14 GB)
+2025-04-03 11:04:16,752 - INFO - Read 22,709,088 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/
+2025-04-03 11:04:20,730 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:04:20,731 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:04:23,719 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:04:32,241 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:04:57,573 - INFO - Removed 22,601,088 duplicates (99.52%)
+2025-04-03 11:04:57,574 - INFO - Final dataset has 108,000 rows
+2025-04-03 11:04:57,575 - INFO - DRY RUN: Would write 108,000 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:04:58,854 - INFO - Memory usage after processing: 24.5% (Used: 14.66 GB)
+2025-04-03 11:05:01,611 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet — Removed 22601088 duplicates
+2025-04-03 11:05:01,613 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-03 11:05:01,613 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:05:01,615 - INFO - Memory usage before processing: 8.6% (Used: 4.73 GB)
+2025-04-03 11:05:38,426 - INFO - Read 23,415,552 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/
+2025-04-03 11:05:42,591 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:05:42,592 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:05:45,747 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:05:54,646 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:06:20,168 - INFO - Removed 23,303,520 duplicates (99.52%)
+2025-04-03 11:06:20,168 - INFO - Final dataset has 112,032 rows
+2025-04-03 11:06:20,169 - INFO - DRY RUN: Would write 112,032 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:06:21,640 - INFO - Memory usage after processing: 26.1% (Used: 15.64 GB)
+2025-04-03 11:06:25,210 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet — Removed 23303520 duplicates
+2025-04-03 11:06:25,211 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-03 11:06:25,212 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:06:25,213 - INFO - Memory usage before processing: 7.6% (Used: 4.12 GB)
+2025-04-03 11:07:22,175 - INFO - Read 40,057,344 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/
+2025-04-03 11:07:30,157 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:07:30,158 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:07:35,299 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:07:50,465 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:08:39,355 - INFO - Removed 39,900,096 duplicates (99.61%)
+2025-04-03 11:08:39,357 - INFO - Final dataset has 157,248 rows
+2025-04-03 11:08:39,358 - INFO - DRY RUN: Would write 157,248 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:08:41,873 - INFO - Memory usage after processing: 40.2% (Used: 24.43 GB)
+2025-04-03 11:08:47,538 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet — Removed 39900096 duplicates
+2025-04-03 11:08:47,539 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-03 11:08:47,540 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 11:08:47,541 - INFO - Memory usage before processing: 7.3% (Used: 3.96 GB)
+2025-04-03 11:08:48,533 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/4178054188.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:08:48,635 - INFO - Memory usage after processing: 7.3% (Used: 3.93 GB)
+2025-04-03 11:08:48,637 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:08:48,638 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-03 11:08:48,648 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:08:48,653 - INFO - Memory usage before processing: 7.3% (Used: 3.93 GB)
+2025-04-03 11:09:18,490 - INFO - Read 21,227,616 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/
+2025-04-03 11:09:22,460 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:09:22,461 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:09:25,326 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:09:33,311 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:09:56,729 - INFO - Removed 21,144,096 duplicates (99.61%)
+2025-04-03 11:09:56,730 - INFO - Final dataset has 83,520 rows
+2025-04-03 11:09:56,731 - INFO - DRY RUN: Would write 83,520 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:09:57,934 - INFO - Memory usage after processing: 23.4% (Used: 13.97 GB)
+2025-04-03 11:10:00,458 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet — Removed 21144096 duplicates
+2025-04-03 11:10:00,459 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-03 11:10:00,460 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 11:10:00,461 - INFO - Memory usage before processing: 8.3% (Used: 4.54 GB)
+2025-04-03 11:10:01,255 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/4178054188.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:10:01,355 - INFO - Memory usage after processing: 8.2% (Used: 4.52 GB)
+2025-04-03 11:10:01,357 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:10:01,361 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-03 11:10:01,364 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 11:10:01,365 - INFO - Memory usage before processing: 8.2% (Used: 4.52 GB)
+2025-04-03 11:10:02,379 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/4178054188.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:10:02,480 - INFO - Memory usage after processing: 8.2% (Used: 4.51 GB)
+2025-04-03 11:10:02,483 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:10:02,484 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-03 11:10:02,486 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:10:02,488 - INFO - Memory usage before processing: 8.2% (Used: 4.51 GB)
+2025-04-03 11:10:37,722 - INFO - Read 24,655,968 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/
+2025-04-03 11:10:42,207 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:10:42,208 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:10:45,454 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:10:54,752 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:11:22,786 - INFO - Removed 24,540,768 duplicates (99.53%)
+2025-04-03 11:11:22,787 - INFO - Final dataset has 115,200 rows
+2025-04-03 11:11:22,787 - INFO - DRY RUN: Would write 115,200 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:11:24,158 - INFO - Memory usage after processing: 25.1% (Used: 15.04 GB)
+2025-04-03 11:11:27,169 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet — Removed 24540768 duplicates
+2025-04-03 11:11:27,170 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-03 11:11:27,170 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:11:27,172 - INFO - Memory usage before processing: 7.9% (Used: 4.30 GB)
+2025-04-03 11:12:02,067 - INFO - Read 22,521,024 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/
+2025-04-03 11:12:06,021 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:12:06,022 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:12:08,984 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:12:17,456 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:12:41,963 - INFO - Removed 22,411,296 duplicates (99.51%)
+2025-04-03 11:12:41,964 - INFO - Final dataset has 109,728 rows
+2025-04-03 11:12:41,964 - INFO - DRY RUN: Would write 109,728 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:12:43,388 - INFO - Memory usage after processing: 26.8% (Used: 16.11 GB)
+2025-04-03 11:12:46,960 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet — Removed 22411296 duplicates
+2025-04-03 11:12:46,961 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-03 11:12:46,962 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-03 11:12:46,963 - INFO - Memory usage before processing: 9.0% (Used: 5.03 GB)
+2025-04-03 11:12:47,936 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7031/4178054188.py", line 106, in deduplicate_file
+    df = wr.s3.read_parquet(path=source_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 712, in wrapper
+    return function(**args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 561, in read_parquet
+    return _read_parquet(
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_distributed.py", line 105, in wrapper
+    return cls.dispatch_func(func)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 301, in _read_parquet
+    tables = executor.map(
+             ^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_executor.py", line 53, in map
+    return list(self._exec.map(func, *iterables))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 201, in _read_parquet_file
+    pq_file: pyarrow.parquet.ParquetFile | None = _pyarrow_parquet_file_wrapper(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/s3/_read_parquet.py", line 63, in _pyarrow_parquet_file_wrapper
+    return pyarrow.parquet.ParquetFile(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/pyarrow/parquet/core.py", line 341, in __init__
+    self.reader.open(
+  File "pyarrow/_parquet.pyx", line 1249, in pyarrow._parquet.ParquetReader.open
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:12:48,046 - INFO - Memory usage after processing: 8.9% (Used: 4.96 GB)
+2025-04-03 11:12:48,048 - ERROR - ❌ Failed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet — Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.
+2025-04-03 11:12:48,052 - INFO - 🏁 Finished batch deduplication in 702.47 seconds
+2025-04-03 11:20:05,353 - INFO - 🚀 Starting batch deduplication process
+2025-04-03 11:20:05,354 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-03 11:20:05,354 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-03 11:20:11,807 - INFO - 🧾 Raw folders found: 15
+2025-04-03 11:20:11,808 - INFO - ✅ Already deduped folders: 1
+2025-04-03 11:20:11,809 - INFO - ⚙️ Folders to be deduplicated: 14
+2025-04-03 11:20:11,817 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-03 11:20:11,818 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 11:20:11,819 - INFO - Memory usage before processing: 7.5% (Used: 4.04 GB)
+2025-04-03 11:20:13,643 - INFO - Read 465,947 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/
+2025-04-03 11:20:13,729 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:20:13,730 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:20:13,791 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:20:14,160 - INFO - No duplicates found in the folder
+2025-04-03 11:20:14,161 - INFO - DRY RUN: Would write 465,947 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 11:20:14,349 - INFO - Memory usage after processing: 7.6% (Used: 4.18 GB)
+2025-04-03 11:20:14,350 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet — Removed 0 duplicates
+2025-04-03 11:20:14,351 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-03 11:20:14,351 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 11:20:14,353 - INFO - Memory usage before processing: 7.6% (Used: 4.18 GB)
+2025-04-03 11:20:16,179 - INFO - Read 454,014 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/
+2025-04-03 11:20:16,257 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:20:16,258 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:20:16,317 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:20:16,645 - INFO - No duplicates found in the folder
+2025-04-03 11:20:16,646 - INFO - DRY RUN: Would write 454,014 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 11:20:16,844 - INFO - Memory usage after processing: 9.0% (Used: 5.09 GB)
+2025-04-03 11:20:16,845 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet — Removed 0 duplicates
+2025-04-03 11:20:16,846 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 11:20:16,847 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:20:16,849 - INFO - Memory usage before processing: 9.0% (Used: 5.09 GB)
+2025-04-03 11:20:47,268 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-04-03 11:20:51,237 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:20:51,238 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:20:54,011 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:21:02,122 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:21:26,493 - INFO - Removed 20,936,736 duplicates (99.60%)
+2025-04-03 11:21:26,494 - INFO - Final dataset has 84,384 rows
+2025-04-03 11:21:26,495 - INFO - DRY RUN: Would write 84,384 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:21:27,699 - INFO - Memory usage after processing: 23.6% (Used: 14.07 GB)
+2025-04-03 11:21:30,140 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — Removed 20936736 duplicates
+2025-04-03 11:21:30,141 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-03 11:21:30,142 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:21:30,143 - INFO - Memory usage before processing: 8.6% (Used: 4.76 GB)
+2025-04-03 11:22:02,983 - INFO - Read 22,514,688 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/
+2025-04-03 11:22:07,260 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:22:07,261 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:22:10,244 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:22:18,796 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:22:44,783 - INFO - Removed 22,415,328 duplicates (99.56%)
+2025-04-03 11:22:44,783 - INFO - Final dataset has 99,360 rows
+2025-04-03 11:22:44,784 - INFO - DRY RUN: Would write 99,360 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:22:46,075 - INFO - Memory usage after processing: 24.0% (Used: 14.36 GB)
+2025-04-03 11:22:48,746 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet — Removed 22415328 duplicates
+2025-04-03 11:22:48,747 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-03 11:22:48,748 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:22:48,750 - INFO - Memory usage before processing: 8.1% (Used: 4.44 GB)
+2025-04-03 11:23:22,425 - INFO - Read 22,709,088 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/
+2025-04-03 11:23:26,567 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:23:26,568 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:23:29,592 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:23:38,240 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:24:04,517 - INFO - Removed 22,601,088 duplicates (99.52%)
+2025-04-03 11:24:04,518 - INFO - Final dataset has 108,000 rows
+2025-04-03 11:24:04,518 - INFO - DRY RUN: Would write 108,000 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:24:05,835 - INFO - Memory usage after processing: 23.6% (Used: 14.11 GB)
+2025-04-03 11:24:08,669 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet — Removed 22601088 duplicates
+2025-04-03 11:24:08,670 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-03 11:24:08,671 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:24:08,673 - INFO - Memory usage before processing: 7.7% (Used: 4.22 GB)
+2025-04-03 11:24:46,405 - INFO - Read 23,415,552 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/
+2025-04-03 11:24:50,639 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:24:50,640 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:24:53,769 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:25:02,665 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:25:29,465 - INFO - Removed 23,303,520 duplicates (99.52%)
+2025-04-03 11:25:29,466 - INFO - Final dataset has 112,032 rows
+2025-04-03 11:25:29,467 - INFO - DRY RUN: Would write 112,032 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:25:30,980 - INFO - Memory usage after processing: 26.5% (Used: 15.89 GB)
+2025-04-03 11:25:34,747 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet — Removed 23303520 duplicates
+2025-04-03 11:25:34,749 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-03 11:25:34,750 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:25:34,751 - INFO - Memory usage before processing: 9.0% (Used: 5.04 GB)
+2025-04-03 11:26:33,132 - INFO - Read 40,057,344 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/
+2025-04-03 11:26:41,364 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:26:41,366 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:26:46,687 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:27:02,141 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:27:51,759 - INFO - Removed 39,900,096 duplicates (99.61%)
+2025-04-03 11:27:51,760 - INFO - Final dataset has 157,248 rows
+2025-04-03 11:27:51,760 - INFO - DRY RUN: Would write 157,248 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:27:54,422 - INFO - Memory usage after processing: 41.1% (Used: 25.06 GB)
+2025-04-03 11:28:00,236 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet — Removed 39900096 duplicates
+2025-04-03 11:28:00,237 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-03 11:28:00,238 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 11:28:00,240 - INFO - Memory usage before processing: 8.6% (Used: 4.74 GB)
+2025-04-03 11:28:57,323 - INFO - Read 39,456,288 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/
+2025-04-03 11:29:04,311 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:29:04,312 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:29:09,396 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:29:24,376 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:30:12,743 - INFO - Removed 39,279,168 duplicates (99.55%)
+2025-04-03 11:30:12,744 - INFO - Final dataset has 177,120 rows
+2025-04-03 11:30:12,744 - INFO - DRY RUN: Would write 177,120 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 11:30:15,226 - INFO - Memory usage after processing: 39.8% (Used: 24.18 GB)
+2025-04-03 11:30:20,619 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet — Removed 39279168 duplicates
+2025-04-03 11:30:20,621 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-03 11:30:20,622 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:30:20,623 - INFO - Memory usage before processing: 7.8% (Used: 4.24 GB)
+2025-04-03 11:30:50,711 - INFO - Read 21,227,616 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/
+2025-04-03 11:30:54,621 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:30:54,622 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:30:57,408 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:31:05,446 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:31:29,012 - INFO - Removed 21,144,096 duplicates (99.61%)
+2025-04-03 11:31:29,013 - INFO - Final dataset has 83,520 rows
+2025-04-03 11:31:29,013 - INFO - DRY RUN: Would write 83,520 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:31:30,221 - INFO - Memory usage after processing: 23.1% (Used: 13.77 GB)
+2025-04-03 11:31:32,724 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet — Removed 21144096 duplicates
+2025-04-03 11:31:32,725 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-03 11:31:32,726 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 11:31:32,727 - INFO - Memory usage before processing: 7.8% (Used: 4.23 GB)
+2025-04-03 11:32:04,614 - INFO - Read 21,893,760 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/
+2025-04-03 11:32:08,572 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:32:08,573 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:32:11,463 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:32:19,675 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:32:44,171 - INFO - Removed 21,797,856 duplicates (99.56%)
+2025-04-03 11:32:44,172 - INFO - Final dataset has 95,904 rows
+2025-04-03 11:32:44,172 - INFO - DRY RUN: Would write 95,904 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 11:32:45,422 - INFO - Memory usage after processing: 23.7% (Used: 14.18 GB)
+2025-04-03 11:32:48,014 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet — Removed 21797856 duplicates
+2025-04-03 11:32:48,015 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-03 11:32:48,016 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 11:32:48,017 - INFO - Memory usage before processing: 8.1% (Used: 4.42 GB)
+2025-04-03 11:33:22,898 - INFO - Read 23,709,888 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/
+2025-04-03 11:33:27,357 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:33:27,358 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:33:30,451 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:33:39,417 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:34:06,339 - INFO - Removed 23,598,144 duplicates (99.53%)
+2025-04-03 11:34:06,340 - INFO - Final dataset has 111,744 rows
+2025-04-03 11:34:06,341 - INFO - DRY RUN: Would write 111,744 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 11:34:07,665 - INFO - Memory usage after processing: 24.8% (Used: 14.82 GB)
+2025-04-03 11:34:10,461 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet — Removed 23598144 duplicates
+2025-04-03 11:34:10,462 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-03 11:34:10,463 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:34:10,465 - INFO - Memory usage before processing: 7.9% (Used: 4.31 GB)
+2025-04-03 11:34:46,081 - INFO - Read 24,655,968 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/
+2025-04-03 11:34:50,615 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:34:50,616 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:34:53,861 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:35:03,246 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:35:31,530 - INFO - Removed 24,540,768 duplicates (99.53%)
+2025-04-03 11:35:31,531 - INFO - Final dataset has 115,200 rows
+2025-04-03 11:35:31,532 - INFO - DRY RUN: Would write 115,200 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:35:32,914 - INFO - Memory usage after processing: 26.0% (Used: 15.57 GB)
+2025-04-03 11:35:35,983 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet — Removed 24540768 duplicates
+2025-04-03 11:35:35,984 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-03 11:35:35,985 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:35:35,985 - INFO - Memory usage before processing: 8.5% (Used: 4.71 GB)
+2025-04-03 11:36:11,217 - INFO - Read 22,521,024 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/
+2025-04-03 11:36:15,210 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:36:15,211 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:36:18,234 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:36:26,738 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:36:51,136 - INFO - Removed 22,411,296 duplicates (99.51%)
+2025-04-03 11:36:51,137 - INFO - Final dataset has 109,728 rows
+2025-04-03 11:36:51,137 - INFO - DRY RUN: Would write 109,728 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:36:52,571 - INFO - Memory usage after processing: 27.1% (Used: 16.26 GB)
+2025-04-03 11:36:56,158 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet — Removed 22411296 duplicates
+2025-04-03 11:36:56,159 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-03 11:36:56,160 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-03 11:36:56,161 - INFO - Memory usage before processing: 9.3% (Used: 5.22 GB)
+2025-04-03 11:37:53,748 - INFO - Read 39,539,520 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/
+2025-04-03 11:38:00,788 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:38:00,789 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:38:05,896 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:38:20,888 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:38:26,724 - INFO - Memory usage after processing: 40.1% (Used: 24.34 GB)
+2025-04-03 11:38:42,836 - INFO - 🚀 Starting batch deduplication process
+2025-04-03 11:38:42,838 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-03 11:38:42,838 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-03 11:38:49,404 - INFO - 🧾 Raw folders found: 15
+2025-04-03 11:38:49,405 - INFO - ✅ Already deduped folders: 1
+2025-04-03 11:38:49,406 - INFO - ⚙️ Folders to be deduplicated: 14
+2025-04-03 11:38:49,413 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-03 11:38:49,589 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/deduped.parquet
+2025-04-03 11:38:49,590 - INFO - Memory usage before processing: 39.9% (Used: 24.22 GB)
+2025-04-03 11:38:51,394 - INFO - Read 465,947 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/
+2025-04-03 11:38:51,485 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:38:51,486 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:38:51,545 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:38:51,898 - INFO - No duplicates found in the folder
+2025-04-03 11:38:53,394 - INFO - Successfully wrote data to target
+2025-04-03 11:38:53,641 - INFO - Memory usage after processing: 39.4% (Used: 23.96 GB)
+2025-04-03 11:38:53,641 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet — Removed 0 duplicates
+2025-04-03 11:38:53,642 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-03 11:38:53,686 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/deduped.parquet
+2025-04-03 11:38:53,687 - INFO - Memory usage before processing: 39.4% (Used: 23.96 GB)
+2025-04-03 11:38:55,479 - INFO - Read 454,014 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/
+2025-04-03 11:38:55,568 - INFO - Created TRADINGDATE from SETTLEMENTDATE (floored to day)
+2025-04-03 11:38:55,569 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:38:55,627 - INFO - Using offer date column: OFFERDATE
+2025-04-03 11:38:55,939 - INFO - No duplicates found in the folder
+2025-04-03 11:38:57,429 - INFO - Successfully wrote data to target
+2025-04-03 11:38:57,672 - INFO - Memory usage after processing: 39.4% (Used: 23.94 GB)
+2025-04-03 11:38:57,673 - INFO - ✅ Completed RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet — Removed 0 duplicates
+2025-04-03 11:38:57,674 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-03 11:38:57,721 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:38:57,721 - INFO - Memory usage before processing: 39.4% (Used: 23.94 GB)
+2025-04-03 11:39:27,609 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-04-03 11:39:31,504 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:39:31,505 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:39:34,334 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:39:42,293 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:40:05,505 - INFO - Removed 20,936,736 duplicates (99.60%)
+2025-04-03 11:40:05,506 - INFO - Final dataset has 84,384 rows
+2025-04-03 11:40:05,507 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-04-03 11:40:05,856 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:40:07,095 - INFO - Memory usage after processing: 55.1% (Used: 33.69 GB)
+2025-04-03 11:40:09,563 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet — Removed 20936736 duplicates
+2025-04-03 11:40:09,564 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-03 11:40:09,674 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:40:09,675 - INFO - Memory usage before processing: 40.3% (Used: 24.47 GB)
+2025-04-03 11:40:41,535 - INFO - Read 22,514,688 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/
+2025-04-03 11:40:45,704 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:40:45,705 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:40:48,684 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:40:57,210 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:41:22,373 - INFO - Removed 22,415,328 duplicates (99.56%)
+2025-04-03 11:41:22,374 - INFO - Final dataset has 99,360 rows
+2025-04-03 11:41:22,375 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/deduped.parquet
+2025-04-03 11:41:22,711 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:41:24,026 - INFO - Memory usage after processing: 56.2% (Used: 34.41 GB)
+2025-04-03 11:41:26,602 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet — Removed 22415328 duplicates
+2025-04-03 11:41:26,603 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-03 11:41:26,722 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:41:26,723 - INFO - Memory usage before processing: 40.2% (Used: 24.46 GB)
+2025-04-03 11:41:59,342 - INFO - Read 22,709,088 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/
+2025-04-03 11:42:03,366 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:42:03,367 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:42:06,348 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:42:14,931 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:42:40,183 - INFO - Removed 22,601,088 duplicates (99.52%)
+2025-04-03 11:42:40,184 - INFO - Final dataset has 108,000 rows
+2025-04-03 11:42:40,184 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/deduped.parquet
+2025-04-03 11:42:40,567 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:42:41,891 - INFO - Memory usage after processing: 56.0% (Used: 34.30 GB)
+2025-04-03 11:42:44,622 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet — Removed 22601088 duplicates
+2025-04-03 11:42:44,624 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-03 11:42:44,740 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:42:44,741 - INFO - Memory usage before processing: 40.1% (Used: 24.37 GB)
+2025-04-03 11:43:21,067 - INFO - Read 23,415,552 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/
+2025-04-03 11:43:25,247 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:43:25,248 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:43:28,342 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:43:37,164 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:44:02,495 - INFO - Removed 23,303,520 duplicates (99.52%)
+2025-04-03 11:44:02,496 - INFO - Final dataset has 112,032 rows
+2025-04-03 11:44:02,496 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/deduped.parquet
+2025-04-03 11:44:02,883 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:44:04,411 - INFO - Memory usage after processing: 59.5% (Used: 36.44 GB)
+2025-04-03 11:44:07,992 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet — Removed 23303520 duplicates
+2025-04-03 11:44:07,993 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-03 11:44:08,113 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:44:08,114 - INFO - Memory usage before processing: 40.8% (Used: 24.80 GB)
+2025-04-03 11:45:04,959 - INFO - Read 40,057,344 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/
+2025-04-03 11:45:13,035 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:45:13,036 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:45:18,201 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:45:33,467 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:46:22,544 - INFO - Removed 39,900,096 duplicates (99.61%)
+2025-04-03 11:46:22,545 - INFO - Final dataset has 157,248 rows
+2025-04-03 11:46:22,546 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/deduped.parquet
+2025-04-03 11:46:23,016 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:46:25,596 - INFO - Memory usage after processing: 72.5% (Used: 44.53 GB)
+2025-04-03 11:46:31,362 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet — Removed 39900096 duplicates
+2025-04-03 11:46:31,363 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-03 11:46:31,489 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 11:46:31,490 - INFO - Memory usage before processing: 40.2% (Used: 24.41 GB)
+2025-04-03 11:47:28,385 - INFO - Read 39,456,288 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/
+2025-04-03 11:47:35,363 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:47:35,364 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:47:40,463 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:47:55,532 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:48:43,903 - INFO - Removed 39,279,168 duplicates (99.55%)
+2025-04-03 11:48:43,904 - INFO - Final dataset has 177,120 rows
+2025-04-03 11:48:43,905 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/deduped.parquet
+2025-04-03 11:48:44,415 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:48:46,959 - INFO - Memory usage after processing: 72.1% (Used: 44.29 GB)
+2025-04-03 11:48:52,383 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet — Removed 39279168 duplicates
+2025-04-03 11:48:52,385 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-03 11:48:52,499 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:48:52,501 - INFO - Memory usage before processing: 40.3% (Used: 24.47 GB)
+2025-04-03 11:49:22,412 - INFO - Read 21,227,616 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/
+2025-04-03 11:49:26,336 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:49:26,337 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:49:29,181 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:49:37,296 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:50:00,696 - INFO - Removed 21,144,096 duplicates (99.61%)
+2025-04-03 11:50:00,697 - INFO - Final dataset has 83,520 rows
+2025-04-03 11:50:00,697 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/deduped.parquet
+2025-04-03 11:50:01,028 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:50:02,317 - INFO - Memory usage after processing: 55.3% (Used: 33.82 GB)
+2025-04-03 11:50:04,779 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet — Removed 21144096 duplicates
+2025-04-03 11:50:04,780 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-03 11:50:04,916 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 11:50:04,917 - INFO - Memory usage before processing: 40.3% (Used: 24.51 GB)
+2025-04-03 11:50:36,321 - INFO - Read 21,893,760 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/
+2025-04-03 11:50:40,158 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:50:40,159 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:50:43,046 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:50:51,282 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:51:15,626 - INFO - Removed 21,797,856 duplicates (99.56%)
+2025-04-03 11:51:15,626 - INFO - Final dataset has 95,904 rows
+2025-04-03 11:51:15,627 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/deduped.parquet
+2025-04-03 11:51:15,985 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:51:17,273 - INFO - Memory usage after processing: 56.0% (Used: 34.25 GB)
+2025-04-03 11:51:19,795 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet — Removed 21797856 duplicates
+2025-04-03 11:51:19,796 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-03 11:51:19,907 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 11:51:19,908 - INFO - Memory usage before processing: 40.6% (Used: 24.66 GB)
+2025-04-03 11:51:54,252 - INFO - Read 23,709,888 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/
+2025-04-03 11:51:58,675 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:51:58,676 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:52:01,794 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:52:10,697 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:52:37,317 - INFO - Removed 23,598,144 duplicates (99.53%)
+2025-04-03 11:52:37,318 - INFO - Final dataset has 111,744 rows
+2025-04-03 11:52:37,319 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/deduped.parquet
+2025-04-03 11:52:37,681 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:52:39,060 - INFO - Memory usage after processing: 57.2% (Used: 35.04 GB)
+2025-04-03 11:52:41,829 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet — Removed 23598144 duplicates
+2025-04-03 11:52:41,830 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-03 11:52:41,951 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:52:41,952 - INFO - Memory usage before processing: 40.6% (Used: 24.65 GB)
+2025-04-03 11:53:17,172 - INFO - Read 24,655,968 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/
+2025-04-03 11:53:21,660 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:53:21,661 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:53:24,911 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:53:34,162 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:54:02,139 - INFO - Removed 24,540,768 duplicates (99.53%)
+2025-04-03 11:54:02,140 - INFO - Final dataset has 115,200 rows
+2025-04-03 11:54:02,141 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/deduped.parquet
+2025-04-03 11:54:02,509 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:54:03,936 - INFO - Memory usage after processing: 57.9% (Used: 35.48 GB)
+2025-04-03 11:54:06,940 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet — Removed 24540768 duplicates
+2025-04-03 11:54:06,941 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-03 11:54:07,065 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:54:07,066 - INFO - Memory usage before processing: 40.3% (Used: 24.49 GB)
+2025-04-03 11:54:41,825 - INFO - Read 22,521,024 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/
+2025-04-03 11:54:45,690 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:54:45,691 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:54:48,656 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:54:57,044 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-03 11:55:21,659 - INFO - Removed 22,411,296 duplicates (99.51%)
+2025-04-03 11:55:21,660 - INFO - Final dataset has 109,728 rows
+2025-04-03 11:55:21,661 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/deduped.parquet
+2025-04-03 11:55:22,035 - INFO - Successfully wrote deduplicated data
+2025-04-03 11:55:23,499 - INFO - Memory usage after processing: 57.7% (Used: 35.32 GB)
+2025-04-03 11:55:27,132 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet — Removed 22411296 duplicates
+2025-04-03 11:55:27,133 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-03 11:55:27,238 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-03 11:55:27,239 - INFO - Memory usage before processing: 40.0% (Used: 24.31 GB)
+2025-04-03 11:56:23,666 - INFO - Read 39,539,520 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/
+2025-04-03 11:56:30,662 - INFO - Converted TRADINGDATE to datetime
+2025-04-03 11:56:30,663 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-03 11:56:35,815 - INFO - Using offer date column: OFFERDATETIME
+2025-04-03 11:56:50,644 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
