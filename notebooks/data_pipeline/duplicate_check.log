@@ -1223,3 +1223,35 @@ pyarrow.lib.ArrowInvalid: Parquet magic bytes not found in footer. Either the fi
 2025-04-03 11:56:30,663 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
 2025-04-03 11:56:35,815 - INFO - Using offer date column: OFFERDATETIME
 2025-04-03 11:56:50,644 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-04 07:33:01,971 - INFO - Starting duplicate analysis
+2025-04-04 07:33:01,972 - INFO - File: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-04 07:33:01,973 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-04 07:33:01,973 - INFO - Analyzing file: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-04-04 07:33:01,976 - INFO - Memory usage before processing: 2.8% (Used: 1.15 GB)
+2025-04-04 07:33:01,996 - INFO - Found credentials from IAM Role: thesis
+2025-04-04 07:33:02,325 - INFO - Found credentials from IAM Role: thesis
+2025-04-04 07:33:05,608 - INFO - Memory usage after processing: 5.3% (Used: 2.75 GB)
+2025-04-04 07:33:05,609 - INFO - Total execution time: 3.64 seconds
+2025-04-04 07:33:36,971 - INFO - 🚀 Starting batch deduplication process
+2025-04-04 07:33:36,972 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-04 07:33:36,972 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-04 07:33:36,992 - INFO - Found credentials from IAM Role: thesis
+2025-04-04 07:33:43,487 - INFO - Found credentials from IAM Role: thesis
+2025-04-04 07:33:43,742 - INFO - 🧾 Raw folders found: 15
+2025-04-04 07:33:43,743 - INFO - ✅ Already deduped folders: 14
+2025-04-04 07:33:43,744 - INFO - ⚙️ Folders to be deduplicated: 1
+2025-04-04 07:33:43,765 - INFO - Found credentials from IAM Role: thesis
+2025-04-04 07:33:43,882 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-04 07:33:43,883 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-04 07:33:43,883 - INFO - Memory usage before processing: 2.9% (Used: 1.23 GB)
+2025-04-04 07:34:41,324 - INFO - Read 39,539,520 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/
+2025-04-04 07:34:48,257 - INFO - Converted TRADINGDATE to datetime
+2025-04-04 07:34:48,258 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-04 07:34:53,357 - INFO - Using offer date column: OFFERDATETIME
+2025-04-04 07:35:08,333 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-04 07:35:56,276 - INFO - Removed 39,357,216 duplicates (99.54%)
+2025-04-04 07:35:56,277 - INFO - Final dataset has 182,304 rows
+2025-04-04 07:35:56,278 - INFO - DRY RUN: Would write 182,304 rows to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/deduped.parquet
+2025-04-04 07:35:58,798 - INFO - Memory usage after processing: 36.4% (Used: 22.07 GB)
+2025-04-04 07:36:04,181 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet — Removed 39357216 duplicates
+2025-04-04 07:36:04,183 - INFO - 🏁 Finished batch deduplication in 147.21 seconds
