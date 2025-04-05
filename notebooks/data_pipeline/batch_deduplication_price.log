@@ -1,0 +1,109 @@
+2025-04-05 12:12:26,358 - INFO - 🚀 Starting batch deduplication process (PRICE DATA)
+2025-04-05 12:12:26,359 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/
+2025-04-05 12:12:26,360 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-price-bids/
+2025-04-05 12:12:26,381 - INFO - Found credentials from IAM Role: thesis
+2025-04-05 12:12:26,759 - INFO - Found credentials from IAM Role: thesis
+2025-04-05 12:12:27,017 - INFO - 🧾 Raw folders found: 11
+2025-04-05 12:12:27,018 - INFO - ✅ Already deduped folders: 7
+2025-04-05 12:12:27,019 - INFO - ⚙️ Folders to be deduplicated: 4
+2025-04-05 12:12:27,037 - INFO - Found credentials from IAM Role: thesis
+2025-04-05 12:12:27,159 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet
+2025-04-05 12:12:27,160 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/deduped.parquet
+2025-04-05 12:12:27,160 - INFO - Memory usage before processing: 39.0% (Used: 23.71 GB)
+2025-04-05 12:12:28,572 - INFO - Read 212,562 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/
+2025-04-05 12:12:28,575 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:28,620 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:28,997 - INFO - Removed 211,716 duplicates (99.60%)
+2025-04-05 12:12:28,998 - INFO - Final dataset has 846 rows
+2025-04-05 12:12:28,998 - INFO - DRY RUN: Would write 846 rows to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/deduped.parquet
+2025-04-05 12:12:29,114 - INFO - Memory usage after processing: 39.6% (Used: 24.12 GB)
+2025-04-05 12:12:29,181 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet — Removed 211716 duplicates
+2025-04-05 12:12:29,182 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet
+2025-04-05 12:12:29,183 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/deduped.parquet
+2025-04-05 12:12:29,183 - INFO - Memory usage before processing: 39.4% (Used: 23.95 GB)
+2025-04-05 12:12:30,699 - INFO - Read 253,955 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/
+2025-04-05 12:12:30,700 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:30,749 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:31,196 - INFO - Removed 252,944 duplicates (99.60%)
+2025-04-05 12:12:31,197 - INFO - Final dataset has 1,011 rows
+2025-04-05 12:12:31,198 - INFO - DRY RUN: Would write 1,011 rows to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/deduped.parquet
+2025-04-05 12:12:31,297 - INFO - Memory usage after processing: 39.7% (Used: 24.19 GB)
+2025-04-05 12:12:31,373 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet — Removed 252944 duplicates
+2025-04-05 12:12:31,374 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet
+2025-04-05 12:12:31,375 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/deduped.parquet
+2025-04-05 12:12:31,376 - INFO - Memory usage before processing: 39.4% (Used: 23.96 GB)
+2025-04-05 12:12:32,971 - INFO - Read 274,291 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/
+2025-04-05 12:12:32,972 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:33,024 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:33,513 - INFO - Removed 273,043 duplicates (99.55%)
+2025-04-05 12:12:33,514 - INFO - Final dataset has 1,248 rows
+2025-04-05 12:12:33,514 - INFO - DRY RUN: Would write 1,248 rows to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/deduped.parquet
+2025-04-05 12:12:33,615 - INFO - Memory usage after processing: 39.8% (Used: 24.23 GB)
+2025-04-05 12:12:33,694 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet — Removed 273043 duplicates
+2025-04-05 12:12:33,696 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet
+2025-04-05 12:12:33,696 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/deduped.parquet
+2025-04-05 12:12:33,698 - INFO - Memory usage before processing: 39.5% (Used: 24.04 GB)
+2025-04-05 12:12:35,245 - INFO - Read 288,801 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/
+2025-04-05 12:12:35,246 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:35,301 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:35,820 - INFO - Removed 287,377 duplicates (99.51%)
+2025-04-05 12:12:35,821 - INFO - Final dataset has 1,424 rows
+2025-04-05 12:12:35,821 - INFO - DRY RUN: Would write 1,424 rows to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/deduped.parquet
+2025-04-05 12:12:35,924 - INFO - Memory usage after processing: 39.9% (Used: 24.30 GB)
+2025-04-05 12:12:36,006 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet — Removed 287377 duplicates
+2025-04-05 12:12:36,007 - INFO - 🏁 Finished batch deduplication in 9.65 seconds
+2025-04-05 12:12:44,583 - INFO - 🚀 Starting batch deduplication process (PRICE DATA)
+2025-04-05 12:12:44,583 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/
+2025-04-05 12:12:44,584 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-price-bids/
+2025-04-05 12:12:45,015 - INFO - 🧾 Raw folders found: 11
+2025-04-05 12:12:45,017 - INFO - ✅ Already deduped folders: 7
+2025-04-05 12:12:45,017 - INFO - ⚙️ Folders to be deduplicated: 4
+2025-04-05 12:12:45,026 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet
+2025-04-05 12:12:45,218 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/deduped.parquet
+2025-04-05 12:12:45,220 - INFO - Memory usage before processing: 39.6% (Used: 24.06 GB)
+2025-04-05 12:12:46,566 - INFO - Read 212,562 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/
+2025-04-05 12:12:46,568 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:46,611 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:46,992 - INFO - Removed 211,716 duplicates (99.60%)
+2025-04-05 12:12:46,993 - INFO - Final dataset has 846 rows
+2025-04-05 12:12:46,993 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet/deduped.parquet
+2025-04-05 12:12:47,189 - INFO - Successfully wrote deduplicated data
+2025-04-05 12:12:47,289 - INFO - Memory usage after processing: 39.9% (Used: 24.26 GB)
+2025-04-05 12:12:47,350 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202403010000.parquet — Removed 211716 duplicates
+2025-04-05 12:12:47,351 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet
+2025-04-05 12:12:47,395 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/deduped.parquet
+2025-04-05 12:12:47,396 - INFO - Memory usage before processing: 39.6% (Used: 24.11 GB)
+2025-04-05 12:12:48,809 - INFO - Read 253,955 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/
+2025-04-05 12:12:48,811 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:48,862 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:49,315 - INFO - Removed 252,944 duplicates (99.60%)
+2025-04-05 12:12:49,316 - INFO - Final dataset has 1,011 rows
+2025-04-05 12:12:49,316 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet/deduped.parquet
+2025-04-05 12:12:49,568 - INFO - Successfully wrote deduplicated data
+2025-04-05 12:12:49,668 - INFO - Memory usage after processing: 39.8% (Used: 24.20 GB)
+2025-04-05 12:12:49,743 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202404010000.parquet — Removed 252944 duplicates
+2025-04-05 12:12:49,744 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet
+2025-04-05 12:12:49,791 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/deduped.parquet
+2025-04-05 12:12:49,792 - INFO - Memory usage before processing: 39.5% (Used: 24.00 GB)
+2025-04-05 12:12:51,249 - INFO - Read 274,291 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/
+2025-04-05 12:12:51,251 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:51,305 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:51,805 - INFO - Removed 273,043 duplicates (99.55%)
+2025-04-05 12:12:51,806 - INFO - Final dataset has 1,248 rows
+2025-04-05 12:12:51,807 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet/deduped.parquet
+2025-04-05 12:12:52,004 - INFO - Successfully wrote deduplicated data
+2025-04-05 12:12:52,113 - INFO - Memory usage after processing: 39.9% (Used: 24.27 GB)
+2025-04-05 12:12:52,192 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202406010000.parquet — Removed 273043 duplicates
+2025-04-05 12:12:52,193 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet
+2025-04-05 12:12:52,249 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/ -> s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/deduped.parquet
+2025-04-05 12:12:52,250 - INFO - Memory usage before processing: 39.6% (Used: 24.09 GB)
+2025-04-05 12:12:53,723 - INFO - Read 288,801 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/
+2025-04-05 12:12:53,724 - INFO - Available duplicate keys: ['DUID', 'SETTLEMENTDATE']
+2025-04-05 12:12:53,781 - INFO - Using offer date column: OFFERDATE
+2025-04-05 12:12:54,297 - INFO - Removed 287,377 duplicates (99.51%)
+2025-04-05 12:12:54,298 - INFO - Final dataset has 1,424 rows
+2025-04-05 12:12:54,298 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-price-bids/RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet/deduped.parquet
+2025-04-05 12:12:54,498 - INFO - Successfully wrote deduplicated data
+2025-04-05 12:12:54,604 - INFO - Memory usage after processing: 40.0% (Used: 24.35 GB)
+2025-04-05 12:12:54,682 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDDAYOFFER_202407010000.parquet — Removed 287377 duplicates
+2025-04-05 12:12:54,683 - INFO - 🏁 Finished batch deduplication in 10.10 seconds
