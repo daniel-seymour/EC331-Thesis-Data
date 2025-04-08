@@ -1,0 +1,10 @@
+2025-04-08 09:07:27,883 - INFO - 🚀 Starting batch deduplication process (PRICE DATA)
+2025-04-08 09:07:27,884 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Price-Bids/
+2025-04-08 09:07:27,885 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-price-bids/
+2025-04-08 09:07:27,906 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:07:28,294 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:07:28,558 - INFO - 🧾 Raw folders found: 11
+2025-04-08 09:07:28,559 - INFO - ✅ Already deduped folders: 11
+2025-04-08 09:07:28,560 - INFO - ⚙️ Folders to be deduplicated: 0
+2025-04-08 09:07:28,578 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:07:28,702 - INFO - 🏁 Finished batch deduplication in 0.82 seconds

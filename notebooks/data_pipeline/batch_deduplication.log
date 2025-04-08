@@ -1,0 +1,44 @@
+2025-04-08 09:06:21,997 - INFO - 🚀 Starting batch deduplication process
+2025-04-08 09:06:21,998 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-08 09:06:21,998 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-08 09:06:22,019 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:06:34,473 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:06:34,766 - INFO - 🧾 Raw folders found: 22
+2025-04-08 09:06:34,767 - INFO - ✅ Already deduped folders: 21
+2025-04-08 09:06:34,767 - INFO - ⚙️ Folders to be deduplicated: 1
+2025-04-08 09:06:34,785 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:06:34,893 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet
+2025-04-08 09:06:34,894 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/deduped.parquet
+2025-04-08 09:06:34,895 - INFO - Memory usage before processing: 3.0% (Used: 1.28 GB)
+2025-04-08 09:07:24,378 - INFO - Read 32,937,408 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/
+2025-04-08 09:07:30,793 - INFO - Converted TRADINGDATE to datetime
+2025-04-08 09:07:30,794 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-08 09:07:35,145 - INFO - Using offer date column: OFFERDATETIME
+2025-04-08 09:07:48,138 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-08 09:08:15,671 - INFO - Memory usage after processing: 31.4% (Used: 18.97 GB)
+2025-04-08 09:08:22,889 - INFO - 🚀 Starting batch deduplication process
+2025-04-08 09:08:22,890 - INFO - Raw prefix: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-04-08 09:08:22,890 - INFO - Deduped prefix: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-04-08 09:08:22,913 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:08:33,937 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:08:34,195 - INFO - 🧾 Raw folders found: 22
+2025-04-08 09:08:34,195 - INFO - ✅ Already deduped folders: 21
+2025-04-08 09:08:34,196 - INFO - ⚙️ Folders to be deduplicated: 1
+2025-04-08 09:08:34,214 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 09:08:34,321 - INFO - 📂 Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet
+2025-04-08 09:08:34,497 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/ -> s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/deduped.parquet
+2025-04-08 09:08:34,498 - INFO - Memory usage before processing: 4.1% (Used: 1.94 GB)
+2025-04-08 09:09:22,520 - INFO - Read 32,937,408 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/
+2025-04-08 09:09:28,272 - INFO - Converted TRADINGDATE to datetime
+2025-04-08 09:09:28,273 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-04-08 09:09:32,582 - INFO - Using offer date column: OFFERDATETIME
+2025-04-08 09:09:45,793 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest record
+2025-04-08 09:10:22,858 - INFO - Removed 32,807,520 duplicates (99.61%)
+2025-04-08 09:10:22,859 - INFO - Final dataset has 129,888 rows
+2025-04-08 09:10:22,860 - INFO - Writing deduplicated data to s3://thesis--ec331-s3/de-duped-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/deduped.parquet
+2025-04-08 09:10:23,270 - INFO - Successfully wrote deduplicated data
+2025-04-08 09:10:25,312 - INFO - Memory usage after processing: 30.6% (Used: 18.44 GB)
+2025-04-08 09:10:30,554 - INFO - ✅ Completed RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet — Removed 32807520 duplicates
+2025-04-08 09:10:30,556 - INFO - 🏁 Finished batch deduplication in 127.67 seconds
+2025-04-08 09:10:30,567 - ERROR - No such comm target registered: jupyter.widget.control
+2025-04-08 09:10:30,571 - WARNING - No such comm: 27676324-0635-488d-8f4d-87f43da480bf
