@@ -1,0 +1,1672 @@
+2025-03-19 19:24:35,457 - INFO - Starting memory-efficient deduplication
+2025-03-19 19:24:35,458 - INFO - Source: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-03-19 19:24:35,458 - INFO - Target: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-03-19 19:24:35,459 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:24:35,460 - INFO - Parallel processing: False
+2025-03-19 19:24:35,461 - INFO - Max memory percent: 70.0%
+2025-03-19 19:24:35,463 - INFO - Chunk size: 100,000
+2025-03-19 19:24:35,464 - INFO - Dry run: False
+2025-03-19 19:24:35,465 - INFO - Memory usage start: 2.7% (Used: 1.09 GB)
+2025-03-19 19:24:35,485 - INFO - Found credentials from IAM Role: thesis
+2025-03-19 19:24:35,799 - INFO - Found 16 folders to process
+2025-03-19 19:24:35,800 - INFO - Processing folder 1/16: FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-03-19 19:24:35,801 - INFO - Processing folder: PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-03-19 19:24:36,092 - INFO - Found 1054 files to process
+2025-03-19 19:24:36,093 - INFO - Processing 1054 files sequentially
+2025-03-19 19:24:36,094 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet
+2025-03-19 19:24:36,096 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:36,312 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:36,313 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:36,483 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet
+2025-03-19 19:24:36,485 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:36,723 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:36,724 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:36,884 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet
+2025-03-19 19:24:36,885 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:37,108 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:37,109 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:37,278 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet
+2025-03-19 19:24:37,280 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:37,501 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:37,502 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:37,658 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet
+2025-03-19 19:24:37,660 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:37,884 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:37,885 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:38,059 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet
+2025-03-19 19:24:38,060 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:38,278 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:38,279 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:38,450 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet
+2025-03-19 19:24:38,452 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:38,668 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:38,669 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:38,841 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet
+2025-03-19 19:24:38,842 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:39,067 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:39,068 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:39,221 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet
+2025-03-19 19:24:39,223 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:39,436 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:39,437 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:39,597 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet
+2025-03-19 19:24:39,599 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:39,821 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:39,822 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:39,988 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet
+2025-03-19 19:24:39,989 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:40,216 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:40,217 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:40,381 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet
+2025-03-19 19:24:40,383 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:40,599 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:40,600 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:40,750 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet
+2025-03-19 19:24:40,752 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:40,967 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:40,968 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:41,121 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet
+2025-03-19 19:24:41,123 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:41,344 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:41,345 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:41,498 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet
+2025-03-19 19:24:41,500 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:41,717 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:41,718 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:41,879 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet
+2025-03-19 19:24:41,880 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:42,090 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:42,090 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:42,253 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet
+2025-03-19 19:24:42,255 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:42,477 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:42,478 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:42,636 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet
+2025-03-19 19:24:42,638 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:42,863 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:42,864 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:43,022 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet
+2025-03-19 19:24:43,023 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:43,246 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:43,247 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:43,403 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet
+2025-03-19 19:24:43,405 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:43,619 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:43,620 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:43,778 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet
+2025-03-19 19:24:43,780 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:43,998 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:43,999 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:44,153 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet
+2025-03-19 19:24:44,154 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:44,376 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:44,377 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:44,534 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet
+2025-03-19 19:24:44,535 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:44,752 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:44,753 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:44,916 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet
+2025-03-19 19:24:44,917 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:45,138 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:45,139 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:45,298 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet
+2025-03-19 19:24:45,299 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:45,510 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:45,511 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:45,678 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet
+2025-03-19 19:24:45,679 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:45,898 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:45,899 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:46,076 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet
+2025-03-19 19:24:46,078 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:46,293 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:46,294 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:46,470 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet
+2025-03-19 19:24:46,472 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:46,693 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:46,694 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:46,861 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet
+2025-03-19 19:24:46,863 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:47,122 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:47,123 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:47,292 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet
+2025-03-19 19:24:47,294 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:47,514 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:47,515 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:47,670 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet
+2025-03-19 19:24:47,671 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:47,893 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:47,894 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:48,050 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet
+2025-03-19 19:24:48,051 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:48,271 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:48,272 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:48,431 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet
+2025-03-19 19:24:48,432 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:48,663 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:48,664 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:48,823 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet
+2025-03-19 19:24:48,824 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:49,039 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:49,040 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:49,195 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet
+2025-03-19 19:24:49,197 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:49,409 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:49,410 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:49,568 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet
+2025-03-19 19:24:49,570 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:49,780 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:49,781 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:49,946 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet
+2025-03-19 19:24:49,948 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:50,163 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:50,163 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:50,313 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet
+2025-03-19 19:24:50,314 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:50,531 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:50,532 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:50,686 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet
+2025-03-19 19:24:50,687 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:24:50,908 - INFO - Using chunk size: 100,000 rows
+2025-03-19 19:24:50,909 - ERROR - Error processing s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet: got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_11918/3506413721.py", line 206, in deduplicate_file_chunked
+    for chunk_idx, df_chunk in enumerate(wr.s3.read_parquet(
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_utils.py", line 179, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/jupyter_env/lib/python3.12/site-packages/awswrangler/_config.py", line 699, in wrapper
+    args: dict[str, Any] = signature.bind_partial(*args_raw, **kwargs).arguments
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3249, in bind_partial
+    return self._bind(args, kwargs, partial=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'chunksize'
+2025-03-19 19:24:51,064 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1032.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1032.parquet
+2025-03-19 19:24:51,065 - INFO - Memory usage before processing: 2.7% (Used: 1.11 GB)
+2025-03-19 19:28:08,249 - INFO - Starting memory-efficient deduplication
+2025-03-19 19:28:08,250 - INFO - Source: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/
+2025-03-19 19:28:08,251 - INFO - Target: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-03-19 19:28:08,252 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:28:08,253 - INFO - Parallel processing: False
+2025-03-19 19:28:08,254 - INFO - Max memory percent: 70.0%
+2025-03-19 19:28:08,255 - INFO - Dry run: False
+2025-03-19 19:28:08,256 - INFO - Memory usage start: 2.8% (Used: 1.13 GB)
+2025-03-19 19:28:08,471 - INFO - Found 16 folders to process
+2025-03-19 19:28:08,472 - INFO - Processing folder 1/16: FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/
+2025-03-19 19:28:08,472 - INFO - Processing folder: PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-03-19 19:28:08,474 - INFO - Memory usage before folder processing: 2.8% (Used: 1.13 GB)
+2025-03-19 19:28:08,756 - INFO - Found 1054 files to process
+2025-03-19 19:28:08,757 - INFO - Processing 1054 files sequentially
+2025-03-19 19:28:08,758 - INFO - Processing file 1/1054: part.0.parquet
+2025-03-19 19:28:08,758 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet
+2025-03-19 19:28:08,760 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:09,222 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.0.parquet
+2025-03-19 19:28:09,224 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:09,663 - INFO - Processing file 2/1054: part.1.parquet
+2025-03-19 19:28:09,664 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet
+2025-03-19 19:28:09,666 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:10,129 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1.parquet
+2025-03-19 19:28:10,130 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:10,636 - INFO - Processing file 3/1054: part.10.parquet
+2025-03-19 19:28:10,637 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet
+2025-03-19 19:28:10,639 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:11,076 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.10.parquet
+2025-03-19 19:28:11,077 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:11,505 - INFO - Processing file 4/1054: part.100.parquet
+2025-03-19 19:28:11,506 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet
+2025-03-19 19:28:11,507 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:11,946 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.100.parquet
+2025-03-19 19:28:11,947 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:12,351 - INFO - Processing file 5/1054: part.1000.parquet
+2025-03-19 19:28:12,352 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet
+2025-03-19 19:28:12,353 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:12,801 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1000.parquet
+2025-03-19 19:28:12,802 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:13,234 - INFO - Processing file 6/1054: part.1001.parquet
+2025-03-19 19:28:13,235 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet
+2025-03-19 19:28:13,236 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:13,665 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1001.parquet
+2025-03-19 19:28:13,666 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:14,070 - INFO - Processing file 7/1054: part.1002.parquet
+2025-03-19 19:28:14,072 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet
+2025-03-19 19:28:14,073 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:14,523 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1002.parquet
+2025-03-19 19:28:14,524 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:14,918 - INFO - Processing file 8/1054: part.1003.parquet
+2025-03-19 19:28:14,919 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet
+2025-03-19 19:28:14,920 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:15,352 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1003.parquet
+2025-03-19 19:28:15,354 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:15,754 - INFO - Processing file 9/1054: part.1004.parquet
+2025-03-19 19:28:15,756 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet
+2025-03-19 19:28:15,757 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:16,180 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1004.parquet
+2025-03-19 19:28:16,182 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:16,579 - INFO - Processing file 10/1054: part.1005.parquet
+2025-03-19 19:28:16,580 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet
+2025-03-19 19:28:16,581 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:17,005 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1005.parquet
+2025-03-19 19:28:17,006 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:17,412 - INFO - Memory usage after 10/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:17,413 - INFO - Processing file 11/1054: part.1006.parquet
+2025-03-19 19:28:17,414 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet
+2025-03-19 19:28:17,415 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:17,863 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1006.parquet
+2025-03-19 19:28:17,865 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:18,301 - INFO - Processing file 12/1054: part.1007.parquet
+2025-03-19 19:28:18,302 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet
+2025-03-19 19:28:18,303 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:18,749 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1007.parquet
+2025-03-19 19:28:18,750 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:19,152 - INFO - Processing file 13/1054: part.1008.parquet
+2025-03-19 19:28:19,153 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet
+2025-03-19 19:28:19,154 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:19,585 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1008.parquet
+2025-03-19 19:28:19,586 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:20,031 - INFO - Processing file 14/1054: part.1009.parquet
+2025-03-19 19:28:20,032 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet
+2025-03-19 19:28:20,033 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:20,456 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1009.parquet
+2025-03-19 19:28:20,457 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:20,857 - INFO - Processing file 15/1054: part.101.parquet
+2025-03-19 19:28:20,859 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet
+2025-03-19 19:28:20,860 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:21,275 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.101.parquet
+2025-03-19 19:28:21,276 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:21,674 - INFO - Processing file 16/1054: part.1010.parquet
+2025-03-19 19:28:21,676 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet
+2025-03-19 19:28:21,677 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:22,112 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1010.parquet
+2025-03-19 19:28:22,113 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:22,559 - INFO - Processing file 17/1054: part.1011.parquet
+2025-03-19 19:28:22,560 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet
+2025-03-19 19:28:22,562 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:23,003 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1011.parquet
+2025-03-19 19:28:23,005 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:23,410 - INFO - Processing file 18/1054: part.1012.parquet
+2025-03-19 19:28:23,412 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet
+2025-03-19 19:28:23,413 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:23,837 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1012.parquet
+2025-03-19 19:28:23,839 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:24,244 - INFO - Processing file 19/1054: part.1013.parquet
+2025-03-19 19:28:24,246 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet
+2025-03-19 19:28:24,247 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:24,682 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1013.parquet
+2025-03-19 19:28:24,683 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:25,084 - INFO - Processing file 20/1054: part.1014.parquet
+2025-03-19 19:28:25,086 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet
+2025-03-19 19:28:25,087 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:25,502 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1014.parquet
+2025-03-19 19:28:25,503 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:25,910 - INFO - Memory usage after 20/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:25,911 - INFO - Processing file 21/1054: part.1015.parquet
+2025-03-19 19:28:25,911 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet
+2025-03-19 19:28:25,913 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:26,375 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1015.parquet
+2025-03-19 19:28:26,376 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:26,822 - INFO - Processing file 22/1054: part.1016.parquet
+2025-03-19 19:28:26,823 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet
+2025-03-19 19:28:26,825 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:27,265 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1016.parquet
+2025-03-19 19:28:27,266 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:27,699 - INFO - Processing file 23/1054: part.1017.parquet
+2025-03-19 19:28:27,700 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet
+2025-03-19 19:28:27,702 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:28,114 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1017.parquet
+2025-03-19 19:28:28,116 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:28,515 - INFO - Processing file 24/1054: part.1018.parquet
+2025-03-19 19:28:28,517 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet
+2025-03-19 19:28:28,518 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:28,952 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1018.parquet
+2025-03-19 19:28:28,953 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:29,386 - INFO - Processing file 25/1054: part.1019.parquet
+2025-03-19 19:28:29,388 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet
+2025-03-19 19:28:29,389 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:29,800 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1019.parquet
+2025-03-19 19:28:29,801 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:30,201 - INFO - Processing file 26/1054: part.102.parquet
+2025-03-19 19:28:30,203 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet
+2025-03-19 19:28:30,204 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:30,636 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.102.parquet
+2025-03-19 19:28:30,637 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:31,029 - INFO - Processing file 27/1054: part.1020.parquet
+2025-03-19 19:28:31,031 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet
+2025-03-19 19:28:31,032 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:31,450 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1020.parquet
+2025-03-19 19:28:31,452 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:31,867 - INFO - Processing file 28/1054: part.1021.parquet
+2025-03-19 19:28:31,869 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet
+2025-03-19 19:28:31,870 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:32,324 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1021.parquet
+2025-03-19 19:28:32,325 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:32,720 - INFO - Processing file 29/1054: part.1022.parquet
+2025-03-19 19:28:32,722 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet
+2025-03-19 19:28:32,723 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:33,167 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1022.parquet
+2025-03-19 19:28:33,168 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:33,583 - INFO - Processing file 30/1054: part.1023.parquet
+2025-03-19 19:28:33,584 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet
+2025-03-19 19:28:33,586 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:34,010 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1023.parquet
+2025-03-19 19:28:34,011 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:34,459 - INFO - Memory usage after 30/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:34,460 - INFO - Processing file 31/1054: part.1024.parquet
+2025-03-19 19:28:34,461 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet
+2025-03-19 19:28:34,462 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:34,859 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1024.parquet
+2025-03-19 19:28:34,860 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:35,277 - INFO - Processing file 32/1054: part.1025.parquet
+2025-03-19 19:28:35,279 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet
+2025-03-19 19:28:35,280 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:35,710 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1025.parquet
+2025-03-19 19:28:35,712 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:36,110 - INFO - Processing file 33/1054: part.1026.parquet
+2025-03-19 19:28:36,112 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet
+2025-03-19 19:28:36,113 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:36,559 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1026.parquet
+2025-03-19 19:28:36,561 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:36,958 - INFO - Processing file 34/1054: part.1027.parquet
+2025-03-19 19:28:36,959 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet
+2025-03-19 19:28:36,961 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:37,364 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1027.parquet
+2025-03-19 19:28:37,365 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:37,768 - INFO - Processing file 35/1054: part.1028.parquet
+2025-03-19 19:28:37,770 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet
+2025-03-19 19:28:37,771 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:38,197 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1028.parquet
+2025-03-19 19:28:38,198 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:38,625 - INFO - Processing file 36/1054: part.1029.parquet
+2025-03-19 19:28:38,626 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet
+2025-03-19 19:28:38,627 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:39,044 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1029.parquet
+2025-03-19 19:28:39,045 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:39,447 - INFO - Processing file 37/1054: part.103.parquet
+2025-03-19 19:28:39,449 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet
+2025-03-19 19:28:39,450 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:39,859 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.103.parquet
+2025-03-19 19:28:39,860 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:40,277 - INFO - Processing file 38/1054: part.1030.parquet
+2025-03-19 19:28:40,278 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet
+2025-03-19 19:28:40,279 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:40,699 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1030.parquet
+2025-03-19 19:28:40,700 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:41,123 - INFO - Processing file 39/1054: part.1031.parquet
+2025-03-19 19:28:41,125 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet
+2025-03-19 19:28:41,126 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:41,567 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1031.parquet
+2025-03-19 19:28:41,569 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:42,001 - INFO - Processing file 40/1054: part.1032.parquet
+2025-03-19 19:28:42,003 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1032.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1032.parquet
+2025-03-19 19:28:42,004 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:42,475 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1032.parquet
+2025-03-19 19:28:42,476 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:42,886 - INFO - Memory usage after 40/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:42,887 - INFO - Processing file 41/1054: part.1033.parquet
+2025-03-19 19:28:42,888 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1033.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1033.parquet
+2025-03-19 19:28:42,889 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:43,331 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1033.parquet
+2025-03-19 19:28:43,332 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:43,743 - INFO - Processing file 42/1054: part.1034.parquet
+2025-03-19 19:28:43,745 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1034.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1034.parquet
+2025-03-19 19:28:43,746 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:44,146 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1034.parquet
+2025-03-19 19:28:44,148 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:44,565 - INFO - Processing file 43/1054: part.1035.parquet
+2025-03-19 19:28:44,567 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1035.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1035.parquet
+2025-03-19 19:28:44,568 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:45,007 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1035.parquet
+2025-03-19 19:28:45,009 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:45,413 - INFO - Processing file 44/1054: part.1036.parquet
+2025-03-19 19:28:45,415 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1036.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1036.parquet
+2025-03-19 19:28:45,416 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:45,844 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1036.parquet
+2025-03-19 19:28:45,845 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:46,252 - INFO - Processing file 45/1054: part.1037.parquet
+2025-03-19 19:28:46,253 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1037.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1037.parquet
+2025-03-19 19:28:46,255 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:46,688 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1037.parquet
+2025-03-19 19:28:46,689 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:47,076 - INFO - Processing file 46/1054: part.1038.parquet
+2025-03-19 19:28:47,078 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1038.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1038.parquet
+2025-03-19 19:28:47,079 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:47,519 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1038.parquet
+2025-03-19 19:28:47,520 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:47,925 - INFO - Processing file 47/1054: part.1039.parquet
+2025-03-19 19:28:47,926 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1039.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1039.parquet
+2025-03-19 19:28:47,928 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:48,338 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1039.parquet
+2025-03-19 19:28:48,339 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:48,745 - INFO - Processing file 48/1054: part.104.parquet
+2025-03-19 19:28:48,747 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.104.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.104.parquet
+2025-03-19 19:28:48,748 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:49,186 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.104.parquet
+2025-03-19 19:28:49,187 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:49,611 - INFO - Processing file 49/1054: part.1040.parquet
+2025-03-19 19:28:49,612 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1040.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1040.parquet
+2025-03-19 19:28:49,613 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:50,054 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1040.parquet
+2025-03-19 19:28:50,056 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:50,485 - INFO - Processing file 50/1054: part.1041.parquet
+2025-03-19 19:28:50,487 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1041.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1041.parquet
+2025-03-19 19:28:50,488 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:50,953 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1041.parquet
+2025-03-19 19:28:50,954 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:51,361 - INFO - Memory usage after 50/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:51,362 - INFO - Processing file 51/1054: part.1042.parquet
+2025-03-19 19:28:51,363 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1042.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1042.parquet
+2025-03-19 19:28:51,363 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:51,789 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1042.parquet
+2025-03-19 19:28:51,790 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:52,227 - INFO - Processing file 52/1054: part.1043.parquet
+2025-03-19 19:28:52,228 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1043.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1043.parquet
+2025-03-19 19:28:52,230 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:52,672 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1043.parquet
+2025-03-19 19:28:52,673 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:53,105 - INFO - Processing file 53/1054: part.1044.parquet
+2025-03-19 19:28:53,107 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1044.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1044.parquet
+2025-03-19 19:28:53,108 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:53,560 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1044.parquet
+2025-03-19 19:28:53,561 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:53,966 - INFO - Processing file 54/1054: part.1045.parquet
+2025-03-19 19:28:53,967 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1045.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1045.parquet
+2025-03-19 19:28:53,968 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:54,412 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1045.parquet
+2025-03-19 19:28:54,413 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:54,820 - INFO - Processing file 55/1054: part.1046.parquet
+2025-03-19 19:28:54,822 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1046.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1046.parquet
+2025-03-19 19:28:54,823 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:55,255 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1046.parquet
+2025-03-19 19:28:55,256 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:55,664 - INFO - Processing file 56/1054: part.1047.parquet
+2025-03-19 19:28:55,666 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1047.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1047.parquet
+2025-03-19 19:28:55,667 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:56,101 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1047.parquet
+2025-03-19 19:28:56,102 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:56,519 - INFO - Processing file 57/1054: part.1048.parquet
+2025-03-19 19:28:56,521 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1048.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1048.parquet
+2025-03-19 19:28:56,522 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:56,942 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1048.parquet
+2025-03-19 19:28:56,943 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:57,386 - INFO - Processing file 58/1054: part.1049.parquet
+2025-03-19 19:28:57,387 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1049.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1049.parquet
+2025-03-19 19:28:57,388 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:57,813 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1049.parquet
+2025-03-19 19:28:57,814 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:58,225 - INFO - Processing file 59/1054: part.105.parquet
+2025-03-19 19:28:58,226 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.105.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.105.parquet
+2025-03-19 19:28:58,228 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:58,657 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.105.parquet
+2025-03-19 19:28:58,659 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:59,067 - INFO - Processing file 60/1054: part.1050.parquet
+2025-03-19 19:28:59,068 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1050.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1050.parquet
+2025-03-19 19:28:59,070 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:59,484 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1050.parquet
+2025-03-19 19:28:59,485 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:28:59,932 - INFO - Memory usage after 60/1054 files: 2.8% (Used: 1.14 GB)
+2025-03-19 19:28:59,933 - INFO - Processing file 61/1054: part.1051.parquet
+2025-03-19 19:28:59,933 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1051.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1051.parquet
+2025-03-19 19:28:59,935 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:00,379 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1051.parquet
+2025-03-19 19:29:00,380 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:00,791 - INFO - Processing file 62/1054: part.1052.parquet
+2025-03-19 19:29:00,792 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1052.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1052.parquet
+2025-03-19 19:29:00,793 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:01,213 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1052.parquet
+2025-03-19 19:29:01,214 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:01,609 - INFO - Processing file 63/1054: part.1053.parquet
+2025-03-19 19:29:01,611 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1053.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1053.parquet
+2025-03-19 19:29:01,612 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:02,050 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.1053.parquet
+2025-03-19 19:29:02,051 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:02,452 - INFO - Processing file 64/1054: part.106.parquet
+2025-03-19 19:29:02,454 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.106.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.106.parquet
+2025-03-19 19:29:02,455 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:02,917 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.106.parquet
+2025-03-19 19:29:02,918 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:03,332 - INFO - Processing file 65/1054: part.107.parquet
+2025-03-19 19:29:03,334 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.107.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.107.parquet
+2025-03-19 19:29:03,335 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:03,756 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.107.parquet
+2025-03-19 19:29:03,757 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:04,161 - INFO - Processing file 66/1054: part.108.parquet
+2025-03-19 19:29:04,162 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.108.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.108.parquet
+2025-03-19 19:29:04,163 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:04,581 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.108.parquet
+2025-03-19 19:29:04,582 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:05,019 - INFO - Processing file 67/1054: part.109.parquet
+2025-03-19 19:29:05,020 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.109.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.109.parquet
+2025-03-19 19:29:05,022 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:05,470 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.109.parquet
+2025-03-19 19:29:05,471 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:05,885 - INFO - Processing file 68/1054: part.11.parquet
+2025-03-19 19:29:05,887 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.11.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.11.parquet
+2025-03-19 19:29:05,888 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:06,304 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.11.parquet
+2025-03-19 19:29:06,306 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:06,713 - INFO - Processing file 69/1054: part.110.parquet
+2025-03-19 19:29:06,715 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.110.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.110.parquet
+2025-03-19 19:29:06,716 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:07,127 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.110.parquet
+2025-03-19 19:29:07,128 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:07,554 - INFO - Processing file 70/1054: part.111.parquet
+2025-03-19 19:29:07,555 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.111.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.111.parquet
+2025-03-19 19:29:07,557 - INFO - Memory usage before processing: 2.8% (Used: 1.14 GB)
+2025-03-19 19:29:08,030 - INFO - Read 36,288 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.111.parquet
+2025-03-19 19:29:08,063 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:08,086 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:08,098 - INFO - Writing 4,320 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.111.parquet
+2025-03-19 19:29:08,424 - INFO - Memory usage after deduplication: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:08,651 - INFO - Memory usage after 70/1054 files: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:08,651 - INFO - Processing file 71/1054: part.112.parquet
+2025-03-19 19:29:08,652 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.112.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.112.parquet
+2025-03-19 19:29:08,653 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:09,107 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.112.parquet
+2025-03-19 19:29:09,108 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:09,524 - INFO - Processing file 72/1054: part.113.parquet
+2025-03-19 19:29:09,525 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.113.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.113.parquet
+2025-03-19 19:29:09,527 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:09,935 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.113.parquet
+2025-03-19 19:29:09,936 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:10,320 - INFO - Processing file 73/1054: part.114.parquet
+2025-03-19 19:29:10,321 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.114.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.114.parquet
+2025-03-19 19:29:10,322 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:10,755 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.114.parquet
+2025-03-19 19:29:10,756 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:11,185 - INFO - Processing file 74/1054: part.115.parquet
+2025-03-19 19:29:11,187 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.115.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.115.parquet
+2025-03-19 19:29:11,188 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:11,622 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.115.parquet
+2025-03-19 19:29:11,623 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:12,040 - INFO - Processing file 75/1054: part.116.parquet
+2025-03-19 19:29:12,042 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.116.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.116.parquet
+2025-03-19 19:29:12,043 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:29:12,482 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.116.parquet
+2025-03-19 19:29:12,483 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:12,900 - INFO - Processing file 76/1054: part.117.parquet
+2025-03-19 19:29:12,901 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.117.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.117.parquet
+2025-03-19 19:29:12,903 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:13,333 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.117.parquet
+2025-03-19 19:29:13,335 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:13,728 - INFO - Processing file 77/1054: part.118.parquet
+2025-03-19 19:29:13,729 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.118.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.118.parquet
+2025-03-19 19:29:13,731 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:14,162 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.118.parquet
+2025-03-19 19:29:14,163 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:14,608 - INFO - Processing file 78/1054: part.119.parquet
+2025-03-19 19:29:14,609 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.119.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.119.parquet
+2025-03-19 19:29:14,611 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:15,038 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.119.parquet
+2025-03-19 19:29:15,040 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:15,440 - INFO - Processing file 79/1054: part.12.parquet
+2025-03-19 19:29:15,442 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.12.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.12.parquet
+2025-03-19 19:29:15,443 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:15,879 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.12.parquet
+2025-03-19 19:29:15,880 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:16,284 - INFO - Processing file 80/1054: part.120.parquet
+2025-03-19 19:29:16,285 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.120.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.120.parquet
+2025-03-19 19:29:16,286 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:16,731 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.120.parquet
+2025-03-19 19:29:16,733 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:17,146 - INFO - Memory usage after 80/1054 files: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:17,147 - INFO - Processing file 81/1054: part.121.parquet
+2025-03-19 19:29:17,148 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.121.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.121.parquet
+2025-03-19 19:29:17,149 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:17,587 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.121.parquet
+2025-03-19 19:29:17,588 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:17,991 - INFO - Processing file 82/1054: part.122.parquet
+2025-03-19 19:29:17,992 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.122.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.122.parquet
+2025-03-19 19:29:17,994 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:18,432 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.122.parquet
+2025-03-19 19:29:18,433 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:18,841 - INFO - Processing file 83/1054: part.123.parquet
+2025-03-19 19:29:18,842 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.123.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.123.parquet
+2025-03-19 19:29:18,844 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:19,289 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.123.parquet
+2025-03-19 19:29:19,290 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:19,700 - INFO - Processing file 84/1054: part.124.parquet
+2025-03-19 19:29:19,702 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.124.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.124.parquet
+2025-03-19 19:29:19,703 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:20,128 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.124.parquet
+2025-03-19 19:29:20,130 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:20,572 - INFO - Processing file 85/1054: part.125.parquet
+2025-03-19 19:29:20,574 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.125.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.125.parquet
+2025-03-19 19:29:20,575 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:20,998 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.125.parquet
+2025-03-19 19:29:20,999 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:21,378 - INFO - Processing file 86/1054: part.126.parquet
+2025-03-19 19:29:21,379 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.126.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.126.parquet
+2025-03-19 19:29:21,381 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:21,787 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.126.parquet
+2025-03-19 19:29:21,788 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:22,186 - INFO - Processing file 87/1054: part.127.parquet
+2025-03-19 19:29:22,188 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.127.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.127.parquet
+2025-03-19 19:29:22,189 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:22,616 - INFO - Read 1,229 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.127.parquet
+2025-03-19 19:29:22,625 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:22,628 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:22,632 - INFO - Writing 88 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.127.parquet
+2025-03-19 19:29:22,926 - INFO - Memory usage after deduplication: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:23,145 - INFO - Processing file 88/1054: part.128.parquet
+2025-03-19 19:29:23,146 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.128.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.128.parquet
+2025-03-19 19:29:23,147 - INFO - Memory usage before processing: 2.8% (Used: 1.16 GB)
+2025-03-19 19:29:24,303 - INFO - Read 508,956 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.128.parquet
+2025-03-19 19:29:24,685 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:25,043 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:25,202 - INFO - Writing 1,152 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.128.parquet
+2025-03-19 19:29:25,496 - INFO - Memory usage after deduplication: 3.3% (Used: 1.49 GB)
+2025-03-19 19:29:25,818 - INFO - Processing file 89/1054: part.129.parquet
+2025-03-19 19:29:25,819 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.129.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.129.parquet
+2025-03-19 19:29:25,820 - INFO - Memory usage before processing: 3.2% (Used: 1.42 GB)
+2025-03-19 19:29:26,974 - INFO - Read 509,853 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.129.parquet
+2025-03-19 19:29:27,351 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:27,715 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:27,845 - INFO - Writing 1,440 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.129.parquet
+2025-03-19 19:29:28,160 - INFO - Memory usage after deduplication: 3.3% (Used: 1.49 GB)
+2025-03-19 19:29:28,455 - INFO - Processing file 90/1054: part.13.parquet
+2025-03-19 19:29:28,456 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.13.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.13.parquet
+2025-03-19 19:29:28,457 - INFO - Memory usage before processing: 3.3% (Used: 1.48 GB)
+2025-03-19 19:29:28,880 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.13.parquet
+2025-03-19 19:29:28,881 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:29,311 - INFO - Memory usage after 90/1054 files: 3.3% (Used: 1.48 GB)
+2025-03-19 19:29:29,312 - INFO - Processing file 91/1054: part.130.parquet
+2025-03-19 19:29:29,313 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.130.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.130.parquet
+2025-03-19 19:29:29,314 - INFO - Memory usage before processing: 3.3% (Used: 1.48 GB)
+2025-03-19 19:29:30,402 - INFO - Read 509,859 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.130.parquet
+2025-03-19 19:29:30,763 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:31,155 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:31,289 - INFO - Writing 1,440 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.130.parquet
+2025-03-19 19:29:31,619 - INFO - Memory usage after deduplication: 3.4% (Used: 1.50 GB)
+2025-03-19 19:29:31,913 - INFO - Processing file 92/1054: part.131.parquet
+2025-03-19 19:29:31,915 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.131.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.131.parquet
+2025-03-19 19:29:31,916 - INFO - Memory usage before processing: 3.3% (Used: 1.46 GB)
+2025-03-19 19:29:33,005 - INFO - Read 509,867 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.131.parquet
+2025-03-19 19:29:33,362 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:33,725 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:33,866 - INFO - Writing 1,152 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.131.parquet
+2025-03-19 19:29:34,157 - INFO - Memory usage after deduplication: 3.3% (Used: 1.48 GB)
+2025-03-19 19:29:34,448 - INFO - Processing file 93/1054: part.132.parquet
+2025-03-19 19:29:34,449 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.132.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.132.parquet
+2025-03-19 19:29:34,451 - INFO - Memory usage before processing: 3.3% (Used: 1.44 GB)
+2025-03-19 19:29:34,887 - INFO - Read 24,620 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.132.parquet
+2025-03-19 19:29:34,909 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:29:34,924 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:29:34,933 - INFO - Writing 288 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.132.parquet
+2025-03-19 19:29:35,233 - INFO - Memory usage after deduplication: 3.3% (Used: 1.43 GB)
+2025-03-19 19:29:35,484 - INFO - Processing file 94/1054: part.133.parquet
+2025-03-19 19:29:35,485 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.133.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.133.parquet
+2025-03-19 19:29:35,486 - INFO - Memory usage before processing: 3.2% (Used: 1.42 GB)
+2025-03-19 19:29:35,930 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.133.parquet
+2025-03-19 19:29:35,931 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:36,339 - INFO - Processing file 95/1054: part.134.parquet
+2025-03-19 19:29:36,340 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.134.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.134.parquet
+2025-03-19 19:29:36,342 - INFO - Memory usage before processing: 3.3% (Used: 1.42 GB)
+2025-03-19 19:29:36,760 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.134.parquet
+2025-03-19 19:29:36,761 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:37,203 - INFO - Processing file 96/1054: part.135.parquet
+2025-03-19 19:29:37,204 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.135.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.135.parquet
+2025-03-19 19:29:37,205 - INFO - Memory usage before processing: 3.1% (Used: 1.31 GB)
+2025-03-19 19:29:37,636 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.135.parquet
+2025-03-19 19:29:37,637 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:38,038 - INFO - Processing file 97/1054: part.136.parquet
+2025-03-19 19:29:38,039 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.136.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.136.parquet
+2025-03-19 19:29:38,041 - INFO - Memory usage before processing: 3.1% (Used: 1.30 GB)
+2025-03-19 19:29:38,472 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.136.parquet
+2025-03-19 19:29:38,473 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:38,886 - INFO - Processing file 98/1054: part.137.parquet
+2025-03-19 19:29:38,887 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.137.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.137.parquet
+2025-03-19 19:29:38,888 - INFO - Memory usage before processing: 3.0% (Used: 1.29 GB)
+2025-03-19 19:29:39,331 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.137.parquet
+2025-03-19 19:29:39,332 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:39,741 - INFO - Processing file 99/1054: part.138.parquet
+2025-03-19 19:29:39,742 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.138.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.138.parquet
+2025-03-19 19:29:39,743 - INFO - Memory usage before processing: 3.0% (Used: 1.28 GB)
+2025-03-19 19:29:40,173 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.138.parquet
+2025-03-19 19:29:40,174 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:40,574 - INFO - Processing file 100/1054: part.139.parquet
+2025-03-19 19:29:40,576 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.139.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.139.parquet
+2025-03-19 19:29:40,577 - INFO - Memory usage before processing: 3.0% (Used: 1.28 GB)
+2025-03-19 19:29:41,010 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.139.parquet
+2025-03-19 19:29:41,011 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:41,433 - INFO - Memory usage after 100/1054 files: 3.0% (Used: 1.27 GB)
+2025-03-19 19:29:41,434 - INFO - Processing file 101/1054: part.14.parquet
+2025-03-19 19:29:41,435 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.14.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.14.parquet
+2025-03-19 19:29:41,437 - INFO - Memory usage before processing: 3.0% (Used: 1.27 GB)
+2025-03-19 19:29:41,909 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.14.parquet
+2025-03-19 19:29:41,910 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:42,351 - INFO - Processing file 102/1054: part.140.parquet
+2025-03-19 19:29:42,353 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.140.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.140.parquet
+2025-03-19 19:29:42,354 - INFO - Memory usage before processing: 3.0% (Used: 1.26 GB)
+2025-03-19 19:29:42,766 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.140.parquet
+2025-03-19 19:29:42,767 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:43,200 - INFO - Processing file 103/1054: part.141.parquet
+2025-03-19 19:29:43,201 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.141.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.141.parquet
+2025-03-19 19:29:43,203 - INFO - Memory usage before processing: 3.0% (Used: 1.26 GB)
+2025-03-19 19:29:43,630 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.141.parquet
+2025-03-19 19:29:43,631 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:44,047 - INFO - Processing file 104/1054: part.142.parquet
+2025-03-19 19:29:44,049 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.142.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.142.parquet
+2025-03-19 19:29:44,050 - INFO - Memory usage before processing: 3.0% (Used: 1.25 GB)
+2025-03-19 19:29:44,440 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.142.parquet
+2025-03-19 19:29:44,441 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:44,831 - INFO - Processing file 105/1054: part.143.parquet
+2025-03-19 19:29:44,833 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.143.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.143.parquet
+2025-03-19 19:29:44,834 - INFO - Memory usage before processing: 3.0% (Used: 1.25 GB)
+2025-03-19 19:29:45,242 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.143.parquet
+2025-03-19 19:29:45,244 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:45,648 - INFO - Processing file 106/1054: part.144.parquet
+2025-03-19 19:29:45,650 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.144.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.144.parquet
+2025-03-19 19:29:45,651 - INFO - Memory usage before processing: 3.0% (Used: 1.24 GB)
+2025-03-19 19:29:46,059 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.144.parquet
+2025-03-19 19:29:46,060 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:46,495 - INFO - Processing file 107/1054: part.145.parquet
+2025-03-19 19:29:46,497 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.145.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.145.parquet
+2025-03-19 19:29:46,498 - INFO - Memory usage before processing: 2.9% (Used: 1.23 GB)
+2025-03-19 19:29:46,909 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.145.parquet
+2025-03-19 19:29:46,910 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:47,338 - INFO - Processing file 108/1054: part.146.parquet
+2025-03-19 19:29:47,340 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.146.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.146.parquet
+2025-03-19 19:29:47,341 - INFO - Memory usage before processing: 2.9% (Used: 1.23 GB)
+2025-03-19 19:29:47,759 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.146.parquet
+2025-03-19 19:29:47,760 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:48,170 - INFO - Processing file 109/1054: part.147.parquet
+2025-03-19 19:29:48,172 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.147.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.147.parquet
+2025-03-19 19:29:48,173 - INFO - Memory usage before processing: 2.9% (Used: 1.22 GB)
+2025-03-19 19:29:48,585 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.147.parquet
+2025-03-19 19:29:48,586 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:48,990 - INFO - Processing file 110/1054: part.148.parquet
+2025-03-19 19:29:48,992 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.148.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.148.parquet
+2025-03-19 19:29:48,993 - INFO - Memory usage before processing: 2.9% (Used: 1.22 GB)
+2025-03-19 19:29:49,375 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.148.parquet
+2025-03-19 19:29:49,376 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:49,794 - INFO - Memory usage after 110/1054 files: 2.9% (Used: 1.21 GB)
+2025-03-19 19:29:49,795 - INFO - Processing file 111/1054: part.149.parquet
+2025-03-19 19:29:49,795 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.149.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.149.parquet
+2025-03-19 19:29:49,796 - INFO - Memory usage before processing: 2.9% (Used: 1.21 GB)
+2025-03-19 19:29:50,199 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.149.parquet
+2025-03-19 19:29:50,200 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:50,602 - INFO - Processing file 112/1054: part.15.parquet
+2025-03-19 19:29:50,604 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.15.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.15.parquet
+2025-03-19 19:29:50,605 - INFO - Memory usage before processing: 2.9% (Used: 1.20 GB)
+2025-03-19 19:29:51,034 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.15.parquet
+2025-03-19 19:29:51,035 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:51,441 - INFO - Processing file 113/1054: part.150.parquet
+2025-03-19 19:29:51,443 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.150.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.150.parquet
+2025-03-19 19:29:51,444 - INFO - Memory usage before processing: 2.9% (Used: 1.20 GB)
+2025-03-19 19:29:51,916 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.150.parquet
+2025-03-19 19:29:51,917 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:52,370 - INFO - Processing file 114/1054: part.151.parquet
+2025-03-19 19:29:52,372 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.151.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.151.parquet
+2025-03-19 19:29:52,373 - INFO - Memory usage before processing: 2.9% (Used: 1.19 GB)
+2025-03-19 19:29:52,793 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.151.parquet
+2025-03-19 19:29:52,794 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:53,203 - INFO - Processing file 115/1054: part.152.parquet
+2025-03-19 19:29:53,205 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.152.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.152.parquet
+2025-03-19 19:29:53,206 - INFO - Memory usage before processing: 2.9% (Used: 1.19 GB)
+2025-03-19 19:29:53,620 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.152.parquet
+2025-03-19 19:29:53,621 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:54,052 - INFO - Processing file 116/1054: part.153.parquet
+2025-03-19 19:29:54,053 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.153.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.153.parquet
+2025-03-19 19:29:54,055 - INFO - Memory usage before processing: 2.9% (Used: 1.19 GB)
+2025-03-19 19:29:54,476 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.153.parquet
+2025-03-19 19:29:54,477 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:54,900 - INFO - Processing file 117/1054: part.154.parquet
+2025-03-19 19:29:54,902 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.154.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.154.parquet
+2025-03-19 19:29:54,904 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:55,339 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.154.parquet
+2025-03-19 19:29:55,341 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:55,774 - INFO - Processing file 118/1054: part.155.parquet
+2025-03-19 19:29:55,776 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.155.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.155.parquet
+2025-03-19 19:29:55,777 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:56,190 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.155.parquet
+2025-03-19 19:29:56,192 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:56,604 - INFO - Processing file 119/1054: part.156.parquet
+2025-03-19 19:29:56,606 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.156.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.156.parquet
+2025-03-19 19:29:56,607 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:57,031 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.156.parquet
+2025-03-19 19:29:57,033 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:57,452 - INFO - Processing file 120/1054: part.157.parquet
+2025-03-19 19:29:57,454 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.157.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.157.parquet
+2025-03-19 19:29:57,455 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:57,847 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.157.parquet
+2025-03-19 19:29:57,848 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:58,269 - INFO - Memory usage after 120/1054 files: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:58,270 - INFO - Processing file 121/1054: part.158.parquet
+2025-03-19 19:29:58,270 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.158.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.158.parquet
+2025-03-19 19:29:58,272 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:29:58,705 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.158.parquet
+2025-03-19 19:29:58,706 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:29:59,130 - INFO - Processing file 122/1054: part.159.parquet
+2025-03-19 19:29:59,132 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.159.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.159.parquet
+2025-03-19 19:29:59,134 - INFO - Memory usage before processing: 2.9% (Used: 1.17 GB)
+2025-03-19 19:29:59,571 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.159.parquet
+2025-03-19 19:29:59,573 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:00,010 - INFO - Processing file 123/1054: part.16.parquet
+2025-03-19 19:30:00,012 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.16.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.16.parquet
+2025-03-19 19:30:00,013 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:00,460 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.16.parquet
+2025-03-19 19:30:00,461 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:00,856 - INFO - Processing file 124/1054: part.160.parquet
+2025-03-19 19:30:00,858 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.160.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.160.parquet
+2025-03-19 19:30:00,859 - INFO - Memory usage before processing: 2.9% (Used: 1.17 GB)
+2025-03-19 19:30:01,670 - INFO - Read 261,665 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.160.parquet
+2025-03-19 19:30:01,860 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:02,039 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:02,108 - INFO - Writing 648 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.160.parquet
+2025-03-19 19:30:02,463 - INFO - Memory usage after deduplication: 3.1% (Used: 1.39 GB)
+2025-03-19 19:30:02,726 - INFO - Processing file 125/1054: part.161.parquet
+2025-03-19 19:30:02,727 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.161.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.161.parquet
+2025-03-19 19:30:02,728 - INFO - Memory usage before processing: 3.0% (Used: 1.29 GB)
+2025-03-19 19:30:03,837 - INFO - Read 509,851 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.161.parquet
+2025-03-19 19:30:04,219 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:04,588 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:04,719 - INFO - Writing 1,430 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.161.parquet
+2025-03-19 19:30:05,031 - INFO - Memory usage after deduplication: 3.4% (Used: 1.53 GB)
+2025-03-19 19:30:05,344 - INFO - Processing file 126/1054: part.162.parquet
+2025-03-19 19:30:05,345 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.162.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.162.parquet
+2025-03-19 19:30:05,347 - INFO - Memory usage before processing: 3.3% (Used: 1.47 GB)
+2025-03-19 19:30:06,478 - INFO - Read 509,862 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.162.parquet
+2025-03-19 19:30:06,851 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:07,231 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:07,375 - INFO - Writing 1,440 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.162.parquet
+2025-03-19 19:30:07,686 - INFO - Memory usage after deduplication: 3.5% (Used: 1.59 GB)
+2025-03-19 19:30:08,009 - INFO - Processing file 127/1054: part.163.parquet
+2025-03-19 19:30:08,010 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.163.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.163.parquet
+2025-03-19 19:30:08,011 - INFO - Memory usage before processing: 3.4% (Used: 1.54 GB)
+2025-03-19 19:30:09,119 - INFO - Read 509,852 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.163.parquet
+2025-03-19 19:30:09,483 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:09,852 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:09,997 - INFO - Writing 1,274 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.163.parquet
+2025-03-19 19:30:10,302 - INFO - Memory usage after deduplication: 3.5% (Used: 1.58 GB)
+2025-03-19 19:30:10,628 - INFO - Processing file 128/1054: part.164.parquet
+2025-03-19 19:30:10,629 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.164.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.164.parquet
+2025-03-19 19:30:10,630 - INFO - Memory usage before processing: 3.4% (Used: 1.50 GB)
+2025-03-19 19:30:11,437 - INFO - Read 277,186 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.164.parquet
+2025-03-19 19:30:11,631 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:11,839 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:11,917 - INFO - Writing 693 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.164.parquet
+2025-03-19 19:30:12,225 - INFO - Memory usage after deduplication: 3.3% (Used: 1.52 GB)
+2025-03-19 19:30:12,516 - INFO - Processing file 129/1054: part.165.parquet
+2025-03-19 19:30:12,517 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.165.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.165.parquet
+2025-03-19 19:30:12,518 - INFO - Memory usage before processing: 3.3% (Used: 1.45 GB)
+2025-03-19 19:30:12,931 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.165.parquet
+2025-03-19 19:30:12,932 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:13,332 - INFO - Processing file 130/1054: part.166.parquet
+2025-03-19 19:30:13,334 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.166.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.166.parquet
+2025-03-19 19:30:13,335 - INFO - Memory usage before processing: 3.3% (Used: 1.43 GB)
+2025-03-19 19:30:13,737 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.166.parquet
+2025-03-19 19:30:13,738 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:14,140 - INFO - Memory usage after 130/1054 files: 3.2% (Used: 1.41 GB)
+2025-03-19 19:30:14,140 - INFO - Processing file 131/1054: part.167.parquet
+2025-03-19 19:30:14,141 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.167.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.167.parquet
+2025-03-19 19:30:14,143 - INFO - Memory usage before processing: 3.2% (Used: 1.41 GB)
+2025-03-19 19:30:14,568 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.167.parquet
+2025-03-19 19:30:14,569 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:14,983 - INFO - Processing file 132/1054: part.168.parquet
+2025-03-19 19:30:14,984 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.168.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.168.parquet
+2025-03-19 19:30:14,985 - INFO - Memory usage before processing: 3.2% (Used: 1.40 GB)
+2025-03-19 19:30:15,393 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.168.parquet
+2025-03-19 19:30:15,394 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:15,807 - INFO - Processing file 133/1054: part.169.parquet
+2025-03-19 19:30:15,808 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.169.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.169.parquet
+2025-03-19 19:30:15,809 - INFO - Memory usage before processing: 3.2% (Used: 1.39 GB)
+2025-03-19 19:30:16,247 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.169.parquet
+2025-03-19 19:30:16,248 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:16,652 - INFO - Processing file 134/1054: part.17.parquet
+2025-03-19 19:30:16,654 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.17.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.17.parquet
+2025-03-19 19:30:16,655 - INFO - Memory usage before processing: 3.2% (Used: 1.38 GB)
+2025-03-19 19:30:17,100 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.17.parquet
+2025-03-19 19:30:17,101 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:17,550 - INFO - Processing file 135/1054: part.170.parquet
+2025-03-19 19:30:17,552 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.170.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.170.parquet
+2025-03-19 19:30:17,553 - INFO - Memory usage before processing: 3.1% (Used: 1.30 GB)
+2025-03-19 19:30:17,990 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.170.parquet
+2025-03-19 19:30:17,991 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:18,406 - INFO - Processing file 136/1054: part.171.parquet
+2025-03-19 19:30:18,408 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.171.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.171.parquet
+2025-03-19 19:30:18,409 - INFO - Memory usage before processing: 3.0% (Used: 1.29 GB)
+2025-03-19 19:30:18,840 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.171.parquet
+2025-03-19 19:30:18,841 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:19,330 - INFO - Processing file 137/1054: part.172.parquet
+2025-03-19 19:30:19,331 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.172.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.172.parquet
+2025-03-19 19:30:19,333 - INFO - Memory usage before processing: 3.0% (Used: 1.29 GB)
+2025-03-19 19:30:19,759 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.172.parquet
+2025-03-19 19:30:19,760 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:20,177 - INFO - Processing file 138/1054: part.173.parquet
+2025-03-19 19:30:20,179 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.173.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.173.parquet
+2025-03-19 19:30:20,180 - INFO - Memory usage before processing: 3.0% (Used: 1.28 GB)
+2025-03-19 19:30:20,612 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.173.parquet
+2025-03-19 19:30:20,613 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:21,016 - INFO - Processing file 139/1054: part.174.parquet
+2025-03-19 19:30:21,017 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.174.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.174.parquet
+2025-03-19 19:30:21,018 - INFO - Memory usage before processing: 3.0% (Used: 1.26 GB)
+2025-03-19 19:30:21,450 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.174.parquet
+2025-03-19 19:30:21,451 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:21,883 - INFO - Processing file 140/1054: part.175.parquet
+2025-03-19 19:30:21,884 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.175.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.175.parquet
+2025-03-19 19:30:21,885 - INFO - Memory usage before processing: 3.0% (Used: 1.25 GB)
+2025-03-19 19:30:22,327 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.175.parquet
+2025-03-19 19:30:22,328 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:22,765 - INFO - Memory usage after 140/1054 files: 3.0% (Used: 1.24 GB)
+2025-03-19 19:30:22,766 - INFO - Processing file 141/1054: part.176.parquet
+2025-03-19 19:30:22,767 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.176.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.176.parquet
+2025-03-19 19:30:22,768 - INFO - Memory usage before processing: 3.0% (Used: 1.24 GB)
+2025-03-19 19:30:23,218 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.176.parquet
+2025-03-19 19:30:23,220 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:23,659 - INFO - Processing file 142/1054: part.177.parquet
+2025-03-19 19:30:23,661 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.177.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.177.parquet
+2025-03-19 19:30:23,662 - INFO - Memory usage before processing: 2.9% (Used: 1.23 GB)
+2025-03-19 19:30:24,093 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.177.parquet
+2025-03-19 19:30:24,095 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:24,523 - INFO - Processing file 143/1054: part.178.parquet
+2025-03-19 19:30:24,525 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.178.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.178.parquet
+2025-03-19 19:30:24,526 - INFO - Memory usage before processing: 2.9% (Used: 1.22 GB)
+2025-03-19 19:30:24,960 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.178.parquet
+2025-03-19 19:30:24,961 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:25,380 - INFO - Processing file 144/1054: part.179.parquet
+2025-03-19 19:30:25,382 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.179.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.179.parquet
+2025-03-19 19:30:25,383 - INFO - Memory usage before processing: 2.9% (Used: 1.21 GB)
+2025-03-19 19:30:25,817 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.179.parquet
+2025-03-19 19:30:25,818 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:26,261 - INFO - Processing file 145/1054: part.18.parquet
+2025-03-19 19:30:26,262 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.18.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.18.parquet
+2025-03-19 19:30:26,264 - INFO - Memory usage before processing: 2.9% (Used: 1.21 GB)
+2025-03-19 19:30:26,703 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.18.parquet
+2025-03-19 19:30:26,705 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:27,135 - INFO - Processing file 146/1054: part.180.parquet
+2025-03-19 19:30:27,137 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.180.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.180.parquet
+2025-03-19 19:30:27,138 - INFO - Memory usage before processing: 2.9% (Used: 1.20 GB)
+2025-03-19 19:30:27,589 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.180.parquet
+2025-03-19 19:30:27,591 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:28,032 - INFO - Processing file 147/1054: part.181.parquet
+2025-03-19 19:30:28,034 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.181.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.181.parquet
+2025-03-19 19:30:28,035 - INFO - Memory usage before processing: 2.9% (Used: 1.20 GB)
+2025-03-19 19:30:28,467 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.181.parquet
+2025-03-19 19:30:28,469 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:28,871 - INFO - Processing file 148/1054: part.182.parquet
+2025-03-19 19:30:28,873 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.182.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.182.parquet
+2025-03-19 19:30:28,874 - INFO - Memory usage before processing: 2.9% (Used: 1.19 GB)
+2025-03-19 19:30:29,304 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.182.parquet
+2025-03-19 19:30:29,305 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:29,728 - INFO - Processing file 149/1054: part.183.parquet
+2025-03-19 19:30:29,730 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.183.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.183.parquet
+2025-03-19 19:30:29,731 - INFO - Memory usage before processing: 2.9% (Used: 1.19 GB)
+2025-03-19 19:30:30,162 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.183.parquet
+2025-03-19 19:30:30,164 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:30,569 - INFO - Processing file 150/1054: part.184.parquet
+2025-03-19 19:30:30,571 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.184.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.184.parquet
+2025-03-19 19:30:30,572 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:30:30,992 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.184.parquet
+2025-03-19 19:30:30,993 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:31,412 - INFO - Memory usage after 150/1054 files: 2.9% (Used: 1.18 GB)
+2025-03-19 19:30:31,413 - INFO - Processing file 151/1054: part.185.parquet
+2025-03-19 19:30:31,414 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.185.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.185.parquet
+2025-03-19 19:30:31,415 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:30:31,838 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.185.parquet
+2025-03-19 19:30:31,839 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:32,245 - INFO - Processing file 152/1054: part.186.parquet
+2025-03-19 19:30:32,247 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.186.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.186.parquet
+2025-03-19 19:30:32,248 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:30:32,699 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.186.parquet
+2025-03-19 19:30:32,700 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:33,105 - INFO - Processing file 153/1054: part.187.parquet
+2025-03-19 19:30:33,106 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.187.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.187.parquet
+2025-03-19 19:30:33,108 - INFO - Memory usage before processing: 2.9% (Used: 1.18 GB)
+2025-03-19 19:30:33,520 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.187.parquet
+2025-03-19 19:30:33,522 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:33,929 - INFO - Processing file 154/1054: part.188.parquet
+2025-03-19 19:30:33,931 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.188.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.188.parquet
+2025-03-19 19:30:33,932 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:34,366 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.188.parquet
+2025-03-19 19:30:34,367 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:34,757 - INFO - Processing file 155/1054: part.189.parquet
+2025-03-19 19:30:34,759 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.189.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.189.parquet
+2025-03-19 19:30:34,760 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:35,181 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.189.parquet
+2025-03-19 19:30:35,183 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:35,581 - INFO - Processing file 156/1054: part.19.parquet
+2025-03-19 19:30:35,583 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.19.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.19.parquet
+2025-03-19 19:30:35,584 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:35,976 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.19.parquet
+2025-03-19 19:30:35,978 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:36,386 - INFO - Processing file 157/1054: part.190.parquet
+2025-03-19 19:30:36,388 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.190.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.190.parquet
+2025-03-19 19:30:36,389 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:36,870 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.190.parquet
+2025-03-19 19:30:36,871 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:37,291 - INFO - Processing file 158/1054: part.191.parquet
+2025-03-19 19:30:37,292 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.191.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.191.parquet
+2025-03-19 19:30:37,294 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:37,692 - INFO - File is empty: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.191.parquet
+2025-03-19 19:30:37,693 - WARNING - Empty DataFrame will be written.
+2025-03-19 19:30:38,098 - INFO - Processing file 159/1054: part.192.parquet
+2025-03-19 19:30:38,100 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.192.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.192.parquet
+2025-03-19 19:30:38,102 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:38,530 - INFO - Read 23,521 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.192.parquet
+2025-03-19 19:30:38,552 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:38,571 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:38,579 - INFO - Writing 288 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.192.parquet
+2025-03-19 19:30:38,895 - INFO - Memory usage after deduplication: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:39,141 - INFO - Processing file 160/1054: part.193.parquet
+2025-03-19 19:30:39,141 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.193.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.193.parquet
+2025-03-19 19:30:39,143 - INFO - Memory usage before processing: 2.8% (Used: 1.17 GB)
+2025-03-19 19:30:40,269 - INFO - Read 509,859 rows from s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.193.parquet
+2025-03-19 19:30:40,655 - INFO - Sorting by offer date column: OFFERDATETIME
+2025-03-19 19:30:41,023 - INFO - Dropping duplicates based on keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 19:30:41,162 - INFO - Writing 1,152 rows to s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.193.parquet
+2025-03-19 19:30:41,467 - INFO - Memory usage after deduplication: 3.4% (Used: 1.53 GB)
+2025-03-19 19:30:41,805 - INFO - Memory usage after 160/1054 files: 2.9% (Used: 1.22 GB)
+2025-03-19 19:30:41,806 - INFO - Processing file 161/1054: part.194.parquet
+2025-03-19 19:30:41,807 - INFO - Processing: s3://thesis--ec331-s3/FCAS_RAISE1SEC-Volume-Bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.194.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/part.194.parquet
+2025-03-19 19:30:41,808 - INFO - Memory usage before processing: 2.9% (Used: 1.22 GB)

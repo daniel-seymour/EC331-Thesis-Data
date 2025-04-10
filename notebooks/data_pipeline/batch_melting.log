@@ -1,0 +1,203 @@
+2025-04-08 10:26:09,473 - INFO - 🚀 Starting batch melting process for volume bids
+2025-04-08 10:26:09,494 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:09,796 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:10,080 - INFO - Found 22 folders in source.
+2025-04-08 10:26:10,081 - INFO - Found 15 folders already processed in output.
+2025-04-08 10:26:10,082 - INFO - 8 folders remain to be processed.
+2025-04-08 10:26:10,083 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet
+2025-04-08 10:26:10,101 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:10,380 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:10,918 - INFO - Read 113,760 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet.
+2025-04-08 10:26:14,171 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:15,040 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet: 309836 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet_part0001.parquet']
+2025-04-08 10:26:15,113 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet
+2025-04-08 10:26:15,132 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:15,405 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:15,890 - INFO - Read 119,808 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet.
+2025-04-08 10:26:19,382 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:20,080 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet: 196971 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet_part0001.parquet']
+2025-04-08 10:26:20,153 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet
+2025-04-08 10:26:20,172 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:20,460 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:21,094 - INFO - Read 189,216 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet.
+2025-04-08 10:26:26,537 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:27,505 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet: 351651 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet_part0001.parquet']
+2025-04-08 10:26:27,585 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet
+2025-04-08 10:26:27,604 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:27,884 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:28,412 - INFO - Read 129,888 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet.
+2025-04-08 10:26:32,134 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:32,988 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet: 297441 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet_part0001.parquet']
+2025-04-08 10:26:33,061 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet
+2025-04-08 10:26:33,080 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:33,357 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:33,941 - INFO - Read 151,488 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet.
+2025-04-08 10:26:38,282 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:39,220 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet: 318945 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet_part0001.parquet']
+2025-04-08 10:26:39,295 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet
+2025-04-08 10:26:39,314 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:39,586 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:40,162 - INFO - Read 177,696 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet.
+2025-04-08 10:26:45,253 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:46,261 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet: 355758 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet_part0001.parquet']
+2025-04-08 10:26:46,338 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-08 10:26:46,358 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:46,632 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:47,225 - INFO - Read 182,304 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet.
+2025-04-08 10:26:52,437 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:53,401 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet: 328009 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet_part0001.parquet']
+2025-04-08 10:26:53,478 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet
+2025-04-08 10:26:53,497 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:53,769 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:26:54,417 - INFO - Read 220,896 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet.
+2025-04-08 10:27:00,765 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:27:01,815 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet: 383959 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet_part0001.parquet']
+2025-04-08 10:27:01,897 - INFO - 🏁 Finished batch melting process for volume bids.
+2025-04-08 10:31:22,097 - INFO - 🚀 Starting batch melting process for volume bids
+2025-04-08 10:31:22,117 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:31:22,405 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:31:22,690 - INFO - Found 22 folders in source.
+2025-04-08 10:31:22,691 - INFO - Found 23 folders already processed in output.
+2025-04-08 10:31:22,692 - INFO - 0 folders remain to be processed.
+2025-04-08 10:31:22,692 - INFO - 🏁 Finished batch melting process for volume bids.
+2025-04-08 10:32:09,854 - INFO - 🚀 Starting batch melting process for volume bids
+2025-04-08 10:32:09,872 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:10,152 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:10,402 - INFO - Found 22 folders in source.
+2025-04-08 10:32:10,403 - INFO - Found 0 folders already processed in output.
+2025-04-08 10:32:10,403 - INFO - 22 folders remain to be processed.
+2025-04-08 10:32:10,404 - INFO - Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet
+2025-04-08 10:32:10,440 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:10,705 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:12,109 - INFO - Read 465,947 rows from folder RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet.
+2025-04-08 10:32:20,928 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:34,883 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:40,543 - INFO - Completed folder RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet: 4659470 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet_part0001.parquet', 's3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202408010000.parquet_part0002.parquet']
+2025-04-08 10:32:40,700 - INFO - Processing folder: RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet
+2025-04-08 10:32:40,717 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:41,011 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:32:42,316 - INFO - Read 454,014 rows from folder RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet.
+2025-04-08 10:32:50,971 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:04,549 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:09,788 - INFO - Completed folder RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet: 4540140 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet_part0001.parquet', 's3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet/RAISE1SEC_PUBLIC_ARCHIVE#BIDPEROFFER_D#FILE01#202409010000.parquet_part0002.parquet']
+2025-04-08 10:33:09,933 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet
+2025-04-08 10:33:09,951 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:10,233 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:10,643 - INFO - Read 41,760 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet.
+2025-04-08 10:33:11,996 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:12,912 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet: 417600 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet_part0001.parquet']
+2025-04-08 10:33:12,977 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet
+2025-04-08 10:33:12,995 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:13,275 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:13,715 - INFO - Read 84,384 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet.
+2025-04-08 10:33:16,033 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:17,581 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet: 843840 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet_part0001.parquet']
+2025-04-08 10:33:17,649 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet
+2025-04-08 10:33:17,667 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:17,947 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:18,398 - INFO - Read 99,360 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet.
+2025-04-08 10:33:21,148 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:22,875 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet: 993600 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202312010000.parquet_part0001.parquet']
+2025-04-08 10:33:22,943 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet
+2025-04-08 10:33:22,964 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:23,237 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:23,706 - INFO - Read 108,000 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet.
+2025-04-08 10:33:26,619 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:28,485 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet: 1080000 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202401010000.parquet_part0001.parquet']
+2025-04-08 10:33:28,554 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet
+2025-04-08 10:33:28,572 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:28,852 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:29,348 - INFO - Read 112,032 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet.
+2025-04-08 10:33:32,463 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:34,600 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet: 1120320 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202402010000.parquet_part0001.parquet']
+2025-04-08 10:33:34,671 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet
+2025-04-08 10:33:34,689 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:34,964 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:35,474 - INFO - Read 113,760 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet.
+2025-04-08 10:33:38,722 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:40,879 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet: 1137600 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202403010000.parquet_part0001.parquet']
+2025-04-08 10:33:40,949 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet
+2025-04-08 10:33:40,967 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:41,240 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:41,740 - INFO - Read 119,808 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet.
+2025-04-08 10:33:45,184 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:47,469 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet: 1198080 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202404010000.parquet_part0001.parquet']
+2025-04-08 10:33:47,541 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet
+2025-04-08 10:33:47,560 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:47,834 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:48,404 - INFO - Read 157,248 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet.
+2025-04-08 10:33:53,065 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:55,997 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet: 1572480 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202405010000.parquet_part0001.parquet']
+2025-04-08 10:33:56,070 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet
+2025-04-08 10:33:56,089 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:56,362 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:33:56,941 - INFO - Read 177,120 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet.
+2025-04-08 10:34:01,988 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:05,249 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet: 1771200 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202406010000.parquet_part0001.parquet']
+2025-04-08 10:34:05,325 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet
+2025-04-08 10:34:05,343 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:05,611 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:06,229 - INFO - Read 189,216 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet.
+2025-04-08 10:34:11,550 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:14,987 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet: 1892160 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202407010000.parquet_part0001.parquet']
+2025-04-08 10:34:15,064 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet
+2025-04-08 10:34:15,083 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:15,367 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:15,804 - INFO - Read 83,520 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet.
+2025-04-08 10:34:18,057 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:19,625 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet: 835200 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202310010000.parquet_part0001.parquet']
+2025-04-08 10:34:19,692 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet
+2025-04-08 10:34:19,710 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:19,980 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:20,474 - INFO - Read 95,904 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet.
+2025-04-08 10:34:23,152 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:24,838 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet: 959040 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202311010000.parquet_part0001.parquet']
+2025-04-08 10:34:24,907 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet
+2025-04-08 10:34:24,924 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:25,203 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:25,680 - INFO - Read 111,744 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet.
+2025-04-08 10:34:28,719 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:30,609 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet: 1117440 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202312010000-1.parquet_part0001.parquet']
+2025-04-08 10:34:30,678 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet
+2025-04-08 10:34:30,696 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:30,967 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:31,424 - INFO - Read 115,200 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet.
+2025-04-08 10:34:34,570 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:36,542 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet: 1152000 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202401010000.parquet_part0001.parquet']
+2025-04-08 10:34:36,612 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet
+2025-04-08 10:34:36,629 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:36,905 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:37,374 - INFO - Read 109,728 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet.
+2025-04-08 10:34:40,410 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:42,504 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet: 1097280 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202402010000.parquet_part0001.parquet']
+2025-04-08 10:34:42,574 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet
+2025-04-08 10:34:42,592 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:42,860 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:43,412 - INFO - Read 129,888 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet.
+2025-04-08 10:34:47,168 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:49,626 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet: 1298880 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202403010000.parquet_part0001.parquet']
+2025-04-08 10:34:49,697 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet
+2025-04-08 10:34:49,716 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:49,994 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:50,540 - INFO - Read 151,488 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet.
+2025-04-08 10:34:54,748 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:57,526 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet: 1514880 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202404010000.parquet_part0001.parquet']
+2025-04-08 10:34:57,599 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet
+2025-04-08 10:34:57,617 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:57,886 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:34:58,492 - INFO - Read 177,696 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet.
+2025-04-08 10:35:03,523 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:06,779 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet: 1776960 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202405010000.parquet_part0001.parquet']
+2025-04-08 10:35:06,855 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet
+2025-04-08 10:35:06,873 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:07,149 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:07,706 - INFO - Read 182,304 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet.
+2025-04-08 10:35:12,957 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:16,291 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet: 1823040 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202406010000.parquet_part0001.parquet']
+2025-04-08 10:35:16,367 - INFO - Processing folder: RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet
+2025-04-08 10:35:16,385 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:16,655 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:17,288 - INFO - Read 220,896 rows from folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet.
+2025-04-08 10:35:23,724 - INFO - Found credentials from IAM Role: thesis
+2025-04-08 10:35:27,692 - INFO - Completed folder RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet: 2208960 rows processed. Chunks written: ['s3://thesis--ec331-s3/melted-volume-bids/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER2_202407010000.parquet_part0001.parquet']
+2025-04-08 10:35:27,772 - INFO - 🏁 Finished batch melting process for volume bids.
