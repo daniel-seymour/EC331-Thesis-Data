@@ -1,8 +1,10 @@
 nem_env/
-<<<<<<< HEAD
-=======
 Data-pipeline/.ipynb_checkpoints/
 EC331-Thesis-Data.git/
 bfg-*.jar
 __pycache__/
->>>>>>> 8e46484d3cc2f6c6a9889d65608fdefb30272d3b
+nem_env/
+Data-pipeline/.ipynb_checkpoints/
+EC331-Thesis-Data.git/
+bfg-*.jar
+__pycache__/

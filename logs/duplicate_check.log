@@ -1,0 +1,63 @@
+2025-03-19 20:27:12,104 - INFO - Starting duplicate analysis
+2025-03-19 20:27:12,105 - INFO - File: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-19 20:27:12,106 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 20:27:12,107 - INFO - Analyzing file: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-19 20:27:12,109 - INFO - Memory usage before processing: 51.1% (Used: 31.25 GB)
+2025-03-19 20:27:12,130 - INFO - Found credentials from IAM Role: thesis
+2025-03-19 20:27:12,440 - INFO - Found credentials from IAM Role: thesis
+2025-03-19 20:27:38,284 - INFO - Read 16,966,080 rows from s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-19 20:27:38,285 - INFO - Columns in the dataset: ['I', 'BIDS', 'BIDOFFERPERIOD', '1', 'DUID', 'BIDTYPE', 'TRADINGDATE', 'OFFERDATETIME', 'PERIODID', 'MAXAVAIL', 'FIXEDLOAD', 'RAMPUPRATE', 'RAMPDOWNRATE', 'ENABLEMENTMIN', 'ENABLEMENTMAX', 'LOWBREAKPOINT', 'HIGHBREAKPOINT', 'BANDAVAIL1', 'BANDAVAIL2', 'BANDAVAIL3', 'BANDAVAIL4', 'BANDAVAIL5', 'BANDAVAIL6', 'BANDAVAIL7', 'BANDAVAIL8', 'BANDAVAIL9', 'BANDAVAIL10', 'PASAAVAILABILITY']
+2025-03-19 20:27:41,476 - INFO - Converted TRADINGDATE to datetime
+2025-03-19 20:27:41,477 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 20:27:43,773 - INFO - Sample data (first 5 rows):
+2025-03-19 20:27:43,788 - INFO -    I  BIDS  BIDOFFERPERIOD    1      DUID    BIDTYPE TRADINGDATE        OFFERDATETIME  PERIODID  MAXAVAIL  FIXEDLOAD  RAMPUPRATE  RAMPDOWNRATE  ENABLEMENTMIN  ENABLEMENTMAX  LOWBREAKPOINT  HIGHBREAKPOINT  BANDAVAIL1  BANDAVAIL2  BANDAVAIL3  BANDAVAIL4  BANDAVAIL5  BANDAVAIL6  BANDAVAIL7  BANDAVAIL8  BANDAVAIL9  BANDAVAIL10  PASAAVAILABILITY
+0  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+1  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       2.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+2  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       3.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+3  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       4.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+4  D  BIDS  BIDOFFERPERIOD  1.0  ASRMGE01  RAISE1SEC  2023-10-09  2023/10/03 12:01:37       5.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0          1.0               NaN
+2025-03-19 20:27:47,346 - INFO - Found 16,966,080 duplicate rows (100.00%)
+2025-03-19 20:27:57,595 - INFO - Found offer date column: OFFERDATETIME
+2025-03-19 20:28:00,578 - INFO - Sample of duplicate data:
+2025-03-19 20:28:12,393 - INFO - Duplicate group with key: 2023-10-08 00:00:00 | ASNENC1 | 1.0
+2025-03-19 20:28:12,394 - INFO - Group has 2 duplicates
+2025-03-19 20:28:12,408 - INFO -           I  BIDS  BIDOFFERPERIOD    1     DUID    BIDTYPE TRADINGDATE       OFFERDATETIME  PERIODID  MAXAVAIL  FIXEDLOAD  RAMPUPRATE  RAMPDOWNRATE  ENABLEMENTMIN  ENABLEMENTMAX  LOWBREAKPOINT  HIGHBREAKPOINT  BANDAVAIL1  BANDAVAIL2  BANDAVAIL3  BANDAVAIL4  BANDAVAIL5  BANDAVAIL6  BANDAVAIL7  BANDAVAIL8  BANDAVAIL9  BANDAVAIL10  PASAAVAILABILITY
+6597217   D  BIDS  BIDOFFERPERIOD  1.0  ASNENC1  RAISE1SEC  2023-10-08 2023-10-05 15:35:07       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         70.0               NaN
+15080257  D  BIDS  BIDOFFERPERIOD  1.0  ASNENC1  RAISE1SEC  2023-10-08 2023-10-05 15:35:07       1.0       0.0        NaN         NaN           NaN            0.0            0.0            0.0             0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         70.0               NaN
+2025-03-19 20:28:13,152 - INFO - Analysis completed in 61.04 seconds
+2025-03-19 20:28:13,216 - INFO - Memory usage after processing: 76.3% (Used: 46.96 GB)
+2025-03-19 20:28:15,769 - INFO - 
+================================================================================
+2025-03-19 20:28:15,770 - INFO - DUPLICATE ANALYSIS SUMMARY
+2025-03-19 20:28:15,771 - INFO - ================================================================================
+2025-03-19 20:28:15,771 - INFO - File: s3://thesis--ec331-s3/volume-bids-compressed/RAISE1SEC_PUBLIC_DVD_BIDPEROFFER1_202310010000.parquet/combined.parquet
+2025-03-19 20:28:15,772 - INFO - Total rows: 16,966,080
+2025-03-19 20:28:15,773 - INFO - Duplicate rows: 16,966,080
+2025-03-19 20:28:15,774 - INFO - Duplicate percentage: 100.00%
+2025-03-19 20:28:15,775 - INFO - Keys used: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 20:28:15,776 - INFO - Execution time: 61.04 seconds
+2025-03-19 20:28:15,777 - INFO - ================================================================================
+2025-03-19 20:28:15,777 - INFO - Total execution time: 63.67 seconds
+2025-03-19 20:36:47,772 - INFO - Starting deduplication process with structure preservation
+2025-03-19 20:36:47,773 - INFO - Source base path: s3://thesis--ec331-s3/volume-bids-compressed/
+2025-03-19 20:36:47,774 - INFO - Target base path: s3://thesis--ec331-s3/de-duped-volume-bids/
+2025-03-19 20:36:47,775 - INFO - Duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 20:36:47,776 - INFO - Offer date column: OFFERDATETIME
+2025-03-19 20:36:47,777 - INFO - Dry run: False
+2025-03-19 20:36:47,778 - INFO - Memory usage start: 57.6% (Used: 35.25 GB)
+2025-03-19 20:36:47,797 - INFO - Found credentials from IAM Role: thesis
+2025-03-19 20:36:48,167 - INFO - Found 9 parquet files to process
+2025-03-19 20:36:48,168 - INFO - Processing file 1/9
+2025-03-19 20:36:48,168 - INFO - Source: s3://thesis--ec331-s3/volume-bids-compressed/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet
+2025-03-19 20:36:48,169 - INFO - Target: s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-03-19 20:36:48,170 - INFO - Processing: s3://thesis--ec331-s3/volume-bids-compressed/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet -> s3://thesis--ec331-s3/de-duped-volume-bids/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/deduped.parquet
+2025-03-19 20:36:48,172 - INFO - Memory usage before processing: 57.6% (Used: 35.25 GB)
+2025-03-19 20:36:48,402 - INFO - Reading parquet file from S3
+2025-03-19 20:37:20,884 - INFO - Read 21,021,120 rows from s3://thesis--ec331-s3/volume-bids-compressed/PUBLIC_DVD_BIDPEROFFER1_202311010000.parquet/combined.parquet
+2025-03-19 20:37:24,729 - INFO - Converted TRADINGDATE to datetime
+2025-03-19 20:37:24,730 - INFO - Available duplicate keys: ['TRADINGDATE', 'DUID', 'PERIODID']
+2025-03-19 20:37:27,569 - INFO - Using offer date column: OFFERDATETIME
+2025-03-19 20:37:35,719 - INFO - Found duplicates, sorting by OFFERDATETIME to keep latest
+2025-03-19 20:37:54,655 - INFO - Processing large dataset in memory-efficient way
+2025-03-19 20:37:59,920 - INFO - Processing 84,384 unique key combinations
+2025-03-19 20:37:59,921 - INFO - Processing batch 1/9
