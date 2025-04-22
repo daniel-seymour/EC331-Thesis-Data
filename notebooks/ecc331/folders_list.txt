@@ -1,0 +1,14 @@
+FCAS_RAISE1SEC-Price-Bids/
+FCAS_RAISE1SEC-Volume-Bids/
+Trading-price/
+de-duped-price-bids/
+de-duped-volume-bids/
+demand-estimation/
+dispatch-data/
+enriched-volume-bids/
+market-shares-DUID-per-trading-interval/
+melted-price-bids/
+melted-volume-bids/
+merged-price-volume-bids/
+step-2-capped-volume-bids/
+temp/
