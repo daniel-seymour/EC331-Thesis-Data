@@ -6,6 +6,7 @@ de-duped-volume-bids/
 demand-estimation/
 dispatch-data/
 enriched-volume-bids/
+instrument/
 market-shares-DUID-per-trading-interval/
 melted-price-bids/
 melted-volume-bids/
