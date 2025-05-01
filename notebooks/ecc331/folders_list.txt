@@ -11,5 +11,6 @@ market-shares-DUID-per-trading-interval/
 melted-price-bids/
 melted-volume-bids/
 merged-price-volume-bids/
+residual-demands/
 step-2-capped-volume-bids/
 temp/
