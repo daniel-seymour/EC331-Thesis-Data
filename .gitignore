@@ -8,3 +8,4 @@ Data-pipeline/.ipynb_checkpoints/
 EC331-Thesis-Data.git/
 bfg-*.jar
 __pycache__/notebooks/Marginal-cost-inference/merged_dict_auto.pkl
+Data_Analysis/Marginal-cost-inference/merged_dict_auto.pkl
