@@ -7,4 +7,9 @@ nem_env/
 Data-pipeline/.ipynb_checkpoints/
 EC331-Thesis-Data.git/
 bfg-*.jar
+<<<<<<< HEAD
 __pycache__/
+=======
+__pycache__/notebooks/Marginal-cost-inference/merged_dict_auto.pkl
+Data_Analysis/Marginal-cost-inference/merged_dict_auto.pkl
+>>>>>>> 4748587ebf3dc1e4074536b4b0d6f2392bb7c977
